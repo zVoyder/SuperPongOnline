@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23c1a0601ef5c84d970a0256acb4dc5, type: 3}
+  m_Name: TestGraph
+  m_EditorClassIdentifier: 
+  FileName: Test
+  Groups: []
+  Nodes:
+  - NodeID: b11be0cb-963d-4ade-b0f9-485c54cbfe77
+    GroupID: 
+    Position: {x: 223.2, y: -424}
+    Name: DialogueName
+    DialogueText: asdasd
+    ActorData: {fileID: 0}
+    DialogueAudioClip: {fileID: 0}
+    DialogueType: 0
+    Choices:
+    - Text: Next Dialogue
+      NodeID: d268085c-90dd-4993-a6b8-cd938602bbe3
+  - NodeID: d268085c-90dd-4993-a6b8-cd938602bbe3
+    GroupID: 
+    Position: {x: 609.6, y: -407.2}
+    Name: 5
+    DialogueText: asdasd
+    ActorData: {fileID: 0}
+    DialogueAudioClip: {fileID: 0}
+    DialogueType: 1
+    Choices:
+    - Text: New Choice
+      NodeID: 
+    - Text: New Choice
+      NodeID: 
+    - Text: New Choice
+      NodeID: 
+    - Text: New Choice
+      NodeID: 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - DialogueName
+  - 5
+  OldGroupedNodeNames:
+    _dictionary: []
