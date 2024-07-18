@@ -31,12 +31,13 @@ namespace VUDK.Patterns.Pooling
         {
             Instantiate(_instancesAtStart);
         }
-
+        
         /// <summary>
-        /// Gets a GameObject from the pool list.
+        /// Gets a pooled gameObject's component.
         /// </summary>
-        /// <returns>GameObject from the pool.</returns>
-        public GameObject Get()
+        /// <typeparam name="T">Component type.</typeparam>
+        /// <returns>Pooled gameObject's component.</returns>
+        public T Get<T>() where T : Component
         {
             if (IsEmpty())
             {
@@ -48,29 +49,22 @@ namespace VUDK.Patterns.Pooling
 
             GameObject deq = _instances.Dequeue();
             deq.SetActive(true);
-
-            return deq;
+            deq.TryGetComponent(out T Component);
+            
+            return Component;
         }
-
-        public bool TryGet(out GameObject pooledObject)
-        {
-            pooledObject = Get();
-
-            if(!pooledObject)
-                return false;
-
-            return true;
-        }
-
+        
         /// <summary>
-        /// Gets a GameObject from the pool list and changes its parent.
+        /// Gets a pooled gameObject's component and sets its parent.
         /// </summary>
-        /// <param name="parent">The new GameObject transform parent.</param>
-        /// <param name="resetTransform">True to reset its transform, False to not reset its transform.</param>
-        /// <returns>GameObject from the pool.</returns>
-        public GameObject Get(Transform parent, bool resetTransform = true)
+        /// <typeparam name="T">Component type.</typeparam>
+        /// <param name="parent">Parent transform.</param>
+        /// <param name="resetTransform">Whether to reset the transform.</param>
+        /// <returns>Pooled gameObject's component.</returns>
+        public GameObject Get<T>(Transform parent, bool resetTransform = true) where T : Component
         {
-            GameObject deq = Get();
+            T Component = Get<T>();
+            GameObject deq = Component.gameObject;
             deq.transform.SetParent(parent);
 
             if (resetTransform)

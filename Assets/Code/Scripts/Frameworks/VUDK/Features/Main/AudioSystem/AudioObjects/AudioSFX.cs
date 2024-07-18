@@ -35,9 +35,8 @@
         public static AudioSFX Create(AudioClip clip)
         {
             ScriptableKey poolKey = MainManager.Ins.AudioManager.SFXPoolKey;
-            GameObject goAud = MainManager.Ins.PoolsManager.Pools[poolKey].Get();
-            if (goAud.TryGetComponent(out AudioSFX audioSFX))
-                audioSFX.SetClip(clip);
+            AudioSFX audioSFX = MainManager.Ins.PoolsManager.Pools[poolKey].Get<AudioSFX>();
+            audioSFX.SetClip(clip);
 
             return audioSFX;
         }
