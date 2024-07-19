@@ -5,13 +5,13 @@ namespace SPO.Managers.GameMachine.Contexts
     public class GameContext : StateContext
     {
         public SPOGameManager GameManager { get; private set; }
-        public SPOGameNetMachineController NetMachineController { get; private set; }
+        public SPONetGameMachineController MachineController { get; private set; }
         
-        public GameContext(SPOGameManager gameManager, SPOGameNetMachineController netMachineController)  : base()
+        public GameContext(SPOGameManager gameManager, SPONetGameMachineController machineController)  : base()
         {
             // Do not use the NetworkManager, since Server methods can be called only from NetworkBehaviour classes
             GameManager = gameManager;
-            NetMachineController = netMachineController;
+            MachineController = machineController;
         }
     }
 }

@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 5da309fa9471b884e843b03abc12179e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7394570190678174224
+    second: 16x16 A-z Symbols SpriteSheet_0
+  - first:
+      213: 6521757774969593821
+    second: 16x16 A-z Symbols SpriteSheet_1
+  - first:
+      213: 2054035749588768474
+    second: 16x16 A-z Symbols SpriteSheet_2
+  - first:
+      213: -8789686987717189509
+    second: 16x16 A-z Symbols SpriteSheet_3
+  - first:
+      213: 3457609127507535135
+    second: 16x16 A-z Symbols SpriteSheet_4
+  - first:
+      213: -6074431471614812709
+    second: 16x16 A-z Symbols SpriteSheet_5
+  - first:
+      213: -8024711592626913354
+    second: 16x16 A-z Symbols SpriteSheet_6
+  - first:
+      213: -6601453016613195011
+    second: 16x16 A-z Symbols SpriteSheet_7
+  - first:
+      213: 6953259600456842924
+    second: 16x16 A-z Symbols SpriteSheet_8
+  - first:
+      213: 5188079773190556257
+    second: 16x16 A-z Symbols SpriteSheet_9
+  - first:
+      213: -8897756189791877850
+    second: 16x16 A-z Symbols SpriteSheet_10
+  - first:
+      213: -5114918897508689714
+    second: 16x16 A-z Symbols SpriteSheet_11
+  - first:
+      213: 7919466164850777859
+    second: 16x16 A-z Symbols SpriteSheet_12
+  - first:
+      213: -5745176700717309151
+    second: 16x16 A-z Symbols SpriteSheet_13
+  - first:
+      213: 7730076165931931323
+    second: 16x16 A-z Symbols SpriteSheet_14
+  - first:
+      213: -1278573569985119247
+    second: 16x16 A-z Symbols SpriteSheet_15
+  - first:
+      213: 3245116921743514835
+    second: 16x16 A-z Symbols SpriteSheet_16
+  - first:
+      213: -3362594115195997592
+    second: 16x16 A-z Symbols SpriteSheet_17
+  - first:
+      213: -4690453092326479767
+    second: 16x16 A-z Symbols SpriteSheet_18
+  - first:
+      213: -6939816066088460754
+    second: 16x16 A-z Symbols SpriteSheet_19
+  - first:
+      213: -8998921584142245723
+    second: 16x16 A-z Symbols SpriteSheet_20
+  - first:
+      213: 6187418911986913896
+    second: 16x16 A-z Symbols SpriteSheet_21
+  - first:
+      213: 5100143089135029171
+    second: 16x16 A-z Symbols SpriteSheet_22
+  - first:
+      213: -5724335597304409132
+    second: 16x16 A-z Symbols SpriteSheet_23
+  - first:
+      213: 2049656729630605902
+    second: 16x16 A-z Symbols SpriteSheet_24
+  - first:
+      213: 4810266065669776582
+    second: 16x16 A-z Symbols SpriteSheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01aa01a096ace9660800000000000000
+      internalID: 7394570190678174224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf54308420f18a50800000000000000
+      internalID: 6521757774969593821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6113aa1a6618c10800000000000000
+      internalID: 2054035749588768474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b706e322142c40680800000000000000
+      internalID: -8789686987717189509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f152c39ae25ebff20800000000000000
+      internalID: 3457609127507535135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd12f1a2c843bba0800000000000000
+      internalID: -6074431471614812709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf7380c25f72a090800000000000000
+      internalID: -8024711592626913354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2f657157de264a0800000000000000
+      internalID: -6601453016613195011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 4
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caefd4444c0fe7060800000000000000
+      internalID: 6953259600456842924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a896be013cff740800000000000000
+      internalID: 5188079773190556257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6250c6143e1d48480800000000000000
+      internalID: -8897756189791877850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8df0bdc582409b0800000000000000
+      internalID: -5114918897508689714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fd7ae848897ed60800000000000000
+      internalID: 7919466164850777859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123e4edda380540b0800000000000000
+      internalID: -5745176700717309151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb61615315fb64b60800000000000000
+      internalID: 7730076165931931323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb75ddbc18914ee0800000000000000
+      internalID: -1278573569985119247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc912f95a8f80d20800000000000000
+      internalID: 3245116921743514835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8627cefc77aa551d0800000000000000
+      internalID: -3362594115195997592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9686f3c73c928eeb0800000000000000
+      internalID: -4690453092326479767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e9f3e7e02d0bf90800000000000000
+      internalID: -6939816066088460754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a02b9f5f786d1380800000000000000
+      internalID: -8998921584142245723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8629385d7b02ed550800000000000000
+      internalID: 6187418911986913896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb8e8b2e1957c640800000000000000
+      internalID: 5100143089135029171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d31c836a131f80b0800000000000000
+      internalID: -5724335597304409132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e420f11afe7d17c10800000000000000
+      internalID: 2049656729630605902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 A-z Symbols SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4ec57308f71c240800000000000000
+      internalID: 4810266065669776582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,16 +17,16 @@ namespace SPO.Managers.GameMachine.States
         {
             Debug.Log("GameEndState entered.");
             
-            if (Context.NetMachineController.isServer)
-                TriggerWinStatus(Context.NetMachineController.GetWinnerID());
+            if (Context.MachineController.isServer)
+                TriggerWinStatus(Context.MachineController.GetWinnerID());
             else
-                Context.NetMachineController.OnWinnerIDChangedHookReceived += TriggerWinStatus;
+                Context.MachineController.OnWinnerIDChangedHookReceived += TriggerWinStatus;
         }
 
         public override void Exit()
         {
-            Context.NetMachineController.OnWinnerIDChangedHookReceived -= TriggerWinStatus;
-            Context.NetMachineController.TriggerResetGame();
+            Context.MachineController.OnWinnerIDChangedHookReceived -= TriggerWinStatus;
+            Context.MachineController.TriggerResetGame();
         }
         
         public override void Process()
@@ -39,7 +39,7 @@ namespace SPO.Managers.GameMachine.States
         
         private void TriggerWinStatus(int winnerID)
         {
-            Context.NetMachineController.TriggerGameOver();
+            Context.MachineController.TriggerGameOver();
             // Context.NetMachineController.ServerGameBegin(); // TODO: This will be called once they both accept the rematch
         }
     }

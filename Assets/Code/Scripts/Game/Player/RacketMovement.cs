@@ -8,32 +8,26 @@ namespace SPO.Player
     using VUDK.Patterns.Initialization.Interfaces;
     using SPO.Managers.GameStats;
 
-    public class RacketMovement : NetworkBehaviour, IInit<PlayerManager, SPOGameStats, Rigidbody2D>
+    public class RacketMovement : NetworkBehaviour, IInit<PlayerRacketManager, SPOGameStats, Rigidbody2D>
     {
         private SPOGameStats _gameStats;
         private Rigidbody2D _rigidbody;
-        private PlayerManager _playerManager;
+        private PlayerRacketManager _playerRacketManager;
         private float _currentVertical;
         
         private float Speed => _gameStats.SyncStats.BracketSpeed * 10f;
         private float TopBoundary => _gameStats.SyncStats.TopBoundary;
         private float BottomBoundary => _gameStats.SyncStats.BottomBoundary;
         
-        public void Init(PlayerManager arg1, SPOGameStats arg2, Rigidbody2D arg3)
+        public void Init(PlayerRacketManager arg1, SPOGameStats arg2, Rigidbody2D arg3)
         {
-            _playerManager = arg1;
+            _playerRacketManager = arg1;
             _gameStats = arg2;
             _rigidbody = arg3;
             
             _rigidbody.simulated = true;
             _rigidbody.bodyType = RigidbodyType2D.Kinematic;
         }
-        
-        // public override void OnStartAuthority()
-        // {
-        //     if (isLocalPlayer)
-        //         Debug.Log("OnStartAuthority" + isOwned);
-        // }
         
         public bool Check()
         {

@@ -1,6 +1,5 @@
 ﻿namespace VUDK.Features.Main.Camera.CameraViews
 {
-    using System;
     using UnityEngine;
     using VUDK.Extensions;
     using VUDK.Features.Main.InputSystem;

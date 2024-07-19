@@ -1,5 +1,6 @@
 namespace SPO.Patterns.Factories
 {
+    using Player;
     using VUDK.Generic.Managers.Main;
     using SPO.Level.Ball;
     using SPO.Patterns.Pooling;

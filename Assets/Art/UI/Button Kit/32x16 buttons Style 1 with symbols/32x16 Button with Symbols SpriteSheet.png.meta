@@ -1,0 +1,1555 @@
+fileFormatVersion: 2
+guid: f30cd84c114506948bd5e5b27425a81f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1209208025405177417
+    second: 32x16 Button with Symbols SpriteSheet_0
+  - first:
+      213: -361931656709647967
+    second: 32x16 Button with Symbols SpriteSheet_1
+  - first:
+      213: -3800269500164446544
+    second: 32x16 Button with Symbols SpriteSheet_2
+  - first:
+      213: 7523511766360592351
+    second: 32x16 Button with Symbols SpriteSheet_3
+  - first:
+      213: -411423408388987606
+    second: 32x16 Button with Symbols SpriteSheet_4
+  - first:
+      213: -955128318103979727
+    second: 32x16 Button with Symbols SpriteSheet_5
+  - first:
+      213: -6815384526778986943
+    second: 32x16 Button with Symbols SpriteSheet_6
+  - first:
+      213: -7920026147226415501
+    second: 32x16 Button with Symbols SpriteSheet_7
+  - first:
+      213: 9081296277049209647
+    second: 32x16 Button with Symbols SpriteSheet_8
+  - first:
+      213: -968068433020619006
+    second: 32x16 Button with Symbols SpriteSheet_9
+  - first:
+      213: -8649830176318552207
+    second: 32x16 Button with Symbols SpriteSheet_10
+  - first:
+      213: 70712387998071107
+    second: 32x16 Button with Symbols SpriteSheet_11
+  - first:
+      213: -794356778457981678
+    second: 32x16 Button with Symbols SpriteSheet_12
+  - first:
+      213: -3264461005173542715
+    second: 32x16 Button with Symbols SpriteSheet_13
+  - first:
+      213: -8822389644895653806
+    second: 32x16 Button with Symbols SpriteSheet_14
+  - first:
+      213: -4582470830034419672
+    second: 32x16 Button with Symbols SpriteSheet_15
+  - first:
+      213: -1261746747089456796
+    second: 32x16 Button with Symbols SpriteSheet_16
+  - first:
+      213: -1200072037836897020
+    second: 32x16 Button with Symbols SpriteSheet_17
+  - first:
+      213: 5427059179887593796
+    second: 32x16 Button with Symbols SpriteSheet_18
+  - first:
+      213: -7851893615386644866
+    second: 32x16 Button with Symbols SpriteSheet_19
+  - first:
+      213: 6702639951601315215
+    second: 32x16 Button with Symbols SpriteSheet_20
+  - first:
+      213: 2402586636851178401
+    second: 32x16 Button with Symbols SpriteSheet_21
+  - first:
+      213: -8213257737596218483
+    second: 32x16 Button with Symbols SpriteSheet_22
+  - first:
+      213: 2171414769956502688
+    second: 32x16 Button with Symbols SpriteSheet_23
+  - first:
+      213: -2128015204176146191
+    second: 32x16 Button with Symbols SpriteSheet_24
+  - first:
+      213: 7599562758424361114
+    second: 32x16 Button with Symbols SpriteSheet_25
+  - first:
+      213: -6129770660254196537
+    second: 32x16 Button with Symbols SpriteSheet_26
+  - first:
+      213: -1887649350542017435
+    second: 32x16 Button with Symbols SpriteSheet_27
+  - first:
+      213: -5920012092253646714
+    second: 32x16 Button with Symbols SpriteSheet_28
+  - first:
+      213: -6329509163224210415
+    second: 32x16 Button with Symbols SpriteSheet_29
+  - first:
+      213: 9146841492571301407
+    second: 32x16 Button with Symbols SpriteSheet_30
+  - first:
+      213: 2207283212989261990
+    second: 32x16 Button with Symbols SpriteSheet_31
+  - first:
+      213: -6108313280900537668
+    second: 32x16 Button with Symbols SpriteSheet_32
+  - first:
+      213: 301455787968987150
+    second: 32x16 Button with Symbols SpriteSheet_33
+  - first:
+      213: 9101734878618905518
+    second: 32x16 Button with Symbols SpriteSheet_34
+  - first:
+      213: -7314544291666948571
+    second: 32x16 Button with Symbols SpriteSheet_35
+  - first:
+      213: -8365430499355383662
+    second: 32x16 Button with Symbols SpriteSheet_36
+  - first:
+      213: -3747386623669420063
+    second: 32x16 Button with Symbols SpriteSheet_37
+  - first:
+      213: 2151845290805532589
+    second: 32x16 Button with Symbols SpriteSheet_38
+  - first:
+      213: -7259185883638582441
+    second: 32x16 Button with Symbols SpriteSheet_39
+  - first:
+      213: -8616608414116769509
+    second: 32x16 Button with Symbols SpriteSheet_40
+  - first:
+      213: 6632168876492380520
+    second: 32x16 Button with Symbols SpriteSheet_41
+  - first:
+      213: -2525244901405755623
+    second: 32x16 Button with Symbols SpriteSheet_42
+  - first:
+      213: -9059720420014189183
+    second: 32x16 Button with Symbols SpriteSheet_43
+  - first:
+      213: -442196295353833337
+    second: 32x16 Button with Symbols SpriteSheet_44
+  - first:
+      213: -1226082459247900414
+    second: 32x16 Button with Symbols SpriteSheet_45
+  - first:
+      213: 5574256456240198398
+    second: 32x16 Button with Symbols SpriteSheet_46
+  - first:
+      213: 3484656348104206477
+    second: 32x16 Button with Symbols SpriteSheet_47
+  - first:
+      213: -1064434816309454361
+    second: 32x16 Button with Symbols SpriteSheet_48
+  - first:
+      213: 3068796213478670487
+    second: 32x16 Button with Symbols SpriteSheet_49
+  - first:
+      213: -4270440507268508893
+    second: 32x16 Button with Symbols SpriteSheet_50
+  - first:
+      213: -6649955359293995808
+    second: 32x16 Button with Symbols SpriteSheet_51
+  - first:
+      213: -7305068402529757892
+    second: 32x16 Button with Symbols SpriteSheet_52
+  - first:
+      213: -4298189627195128261
+    second: 32x16 Button with Symbols SpriteSheet_53
+  - first:
+      213: -1186013586725592118
+    second: 32x16 Button with Symbols SpriteSheet_54
+  - first:
+      213: 2172681070560222618
+    second: 32x16 Button with Symbols SpriteSheet_55
+  - first:
+      213: 7498455505698656681
+    second: 32x16 Button with Symbols SpriteSheet_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94eb3ddda48f7c010800000000000000
+      internalID: 1209208025405177417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a15ad863192afaf0800000000000000
+      internalID: -361931656709647967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b662f7360bb24bc0800000000000000
+      internalID: -3800269500164446544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf05691712e86860800000000000000
+      internalID: 7523511766360592351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25a1b207945a4af0800000000000000
+      internalID: -411423408388987606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139fe7cead3beb2f0800000000000000
+      internalID: -955128318103979727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e05a1e1e3ea61a0800000000000000
+      internalID: -6815384526778986943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e83c26e2a661290800000000000000
+      internalID: -7920026147226415501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23789569de370e70800000000000000
+      internalID: 9081296277049209647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2077983a3eab092f0800000000000000
+      internalID: -968068433020619006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177041d8841a5f780800000000000000
+      internalID: -8649830176318552207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34938dfca883bf000800000000000000
+      internalID: 70712387998071107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d961bf7b0e9f4f0800000000000000
+      internalID: -794356778457981678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0348bf20e42b2d0800000000000000
+      internalID: -3264461005173542715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250f8e96c53909580800000000000000
+      internalID: -8822389644895653806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820853e1f0bc760c0800000000000000
+      internalID: -4582470830034419672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4617a3fb4006d7ee0800000000000000
+      internalID: -1261746747089456796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4054adff6dc785fe0800000000000000
+      internalID: -1200072037836897020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44909300299c05b40800000000000000
+      internalID: 5427059179887593796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ea8b0ab58780390800000000000000
+      internalID: -7851893615386644866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8da98c168f840d50800000000000000
+      internalID: 6702639951601315215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab6d9711d3b75120800000000000000
+      internalID: 2402586636851178401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8359d57a95a40e80800000000000000
+      internalID: -8213257737596218483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac3b478a3a622e10800000000000000
+      internalID: 2171414769956502688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0537e4275c772e0800000000000000
+      internalID: -2128015204176146191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98fb288012177960800000000000000
+      internalID: 7599562758424361114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccdfe8bf0eaeeaa0800000000000000
+      internalID: -6129770660254196537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c3278bae8bdc5e0800000000000000
+      internalID: -1887649350542017435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680543f1e54e7dda0800000000000000
+      internalID: -5920012092253646714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114e07383f01928a0800000000000000
+      internalID: -6329509163224210415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16248d10eb10fe70800000000000000
+      internalID: 9146841492571301407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a868e43368d1ae10800000000000000
+      internalID: 2207283212989261990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb26f1b2f69ea3ba0800000000000000
+      internalID: -6108313280900537668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e008065217cfe2400800000000000000
+      internalID: 301455787968987150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabecd726abdf4e70800000000000000
+      internalID: 9101734878618905518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e845988b48d7a90800000000000000
+      internalID: -7314544291666948571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29824b4684508eb80800000000000000
+      internalID: -8365430499355383662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef322468bb9efbc0800000000000000
+      internalID: -3747386623669420063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da79f0a14e3ecdd10800000000000000
+      internalID: 2151845290805532589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753313f46e0324b90800000000000000
+      internalID: -7259185883638582441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b119de3dc48ab6880800000000000000
+      internalID: -8616608414116769509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869dab554723a0c50800000000000000
+      internalID: 6632168876492380520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917f7d8342784fcd0800000000000000
+      internalID: -2525244901405755623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18593b84748654280800000000000000
+      internalID: -9059720420014189183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788e07eefc00dd9f0800000000000000
+      internalID: -442196295353833337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2090137df741cfee0800000000000000
+      internalID: -1226082459247900414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2ff1996bcbb5d40800000000000000
+      internalID: 5574256456240198398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88af017c7cfb5030800000000000000
+      internalID: 3484656348104206477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e911579c2e5a31f0800000000000000
+      internalID: -1064434816309454361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790c570a5ed869a20800000000000000
+      internalID: 3068796213478670487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32352d10cf85cb4c0800000000000000
+      internalID: -4270440507268508893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4831d65dc96b3a0800000000000000
+      internalID: -6649955359293995808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c359847edfe2f9a90800000000000000
+      internalID: -7305068402529757892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3604cd8e43c954c0800000000000000
+      internalID: -4298189627195128261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac32f683dee6a8fe0800000000000000
+      internalID: -1186013586725592118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 2
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d15fc1ce9e62e10800000000000000
+      internalID: 2172681070560222618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x16 Button with Symbols SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 2
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a19d3dcd8ddf0860800000000000000
+      internalID: 7498455505698656681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

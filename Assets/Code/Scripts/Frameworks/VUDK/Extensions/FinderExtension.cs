@@ -106,5 +106,15 @@
                 GameObject.Destroy(components[components.Length - 1]);
             }
         }
+        
+        public static T FindObjectOfInterface<T>() where T : class
+        {
+            foreach (var component in Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None))
+            {
+                if (component is T)
+                    return component as T;
+            }
+            return null;
+        }
     }
 }

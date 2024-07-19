@@ -31,18 +31,17 @@ namespace Code.Scripts.Game.Level.Goal
             TryGetComponent(out _collider);
             TryGetComponent(out _rigidbody);
             
-            _collider.isTrigger = true;
             _rigidbody.bodyType = RigidbodyType2D.Static;
         }
 
         private void OnEnable()
         {
-            EventManager.Ins.AddListener(SPOEvents.OnGameReset, OnGameReset);
+            EventManager.Ins.AddListener(SPOServerEvents.OnGameReset, OnGameReset);
         }
 
         private void OnDisable()
         {
-            EventManager.Ins.RemoveListener(SPOEvents.OnGameReset, OnGameReset);
+            EventManager.Ins.RemoveListener(SPOServerEvents.OnGameReset, OnGameReset);
         }
 
         [Server]
@@ -50,7 +49,7 @@ namespace Code.Scripts.Game.Level.Goal
         {
             Debug.Log("Goal triggered");
             ScoreValue++;
-            EventManager.Ins.TriggerEvent(SPOEvents.OnGoalScored, new GoalEventArgs(playerID, ScoreValue));
+            EventManager.Ins.TriggerEvent(SPOServerEvents.OnGoalScored, new GoalEventArgs(playerID, ScoreValue));
         }
         
         [Server]

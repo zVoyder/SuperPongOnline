@@ -1,5 +1,6 @@
 ﻿namespace VUDK.Generic.Managers.Main
 {
+    using Extensions;
     using UnityEngine;
     using VUDK.Generic.Managers.Main.Interfaces.Networking;
     using VUDK.Features.Main.AudioSystem;
@@ -28,7 +29,7 @@
     {
         [SerializeField, Header("Network Settings")]
         [Tooltip("Use this option if you want to use networking in your game.\n" +
-                 "Make sure to have an INetworkManager in the Main Manager.")]
+                 "Make sure to have an INetworkManager in the scene.")]
         private bool _useNetworking;
 
         [field: SerializeField, Header("Game Manager")]
@@ -59,10 +60,10 @@
             
             if (_useNetworking)
             {
-                INetworkManager networkManager = GetComponentInChildren<INetworkManager>();
-                
+                INetworkManager networkManager = FinderExtension.FindObjectOfInterface<INetworkManager>();
+
                 if (networkManager == null)
-                    Debug.LogError("No network manager found in the Main Manager.");
+                    Debug.LogError("No INetworkManager found in the scene. Please add an INetworkManager.");
                 else
                     this.NetworkManager = networkManager;
             }

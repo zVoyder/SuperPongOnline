@@ -14,8 +14,8 @@ namespace SPO.Managers.GameMachine.States
         public override void Enter()
         {
             Debug.Log("GameBeginState entered.");
-            Context.NetMachineController.BeginBall();
-            Context.NetMachineController.ServerGamePlaying();
+            Context.MachineController.BeginBall();
+            Context.MachineController.ServerGamePlaying();
         }
 
         public override void Exit()

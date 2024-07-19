@@ -1,0 +1,1638 @@
+fileFormatVersion: 2
+guid: 62e1e6aa3049c344b974f99654701f7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1878108919836232096
+    second: Style 1 Symbols SpriteSheet_0
+  - first:
+      213: 6608341711707714594
+    second: Style 1 Symbols SpriteSheet_1
+  - first:
+      213: 6463630521765311065
+    second: Style 1 Symbols SpriteSheet_2
+  - first:
+      213: -29901012801981414
+    second: Style 1 Symbols SpriteSheet_3
+  - first:
+      213: -6891663503606163739
+    second: Style 1 Symbols SpriteSheet_4
+  - first:
+      213: -3193413996819228697
+    second: Style 1 Symbols SpriteSheet_5
+  - first:
+      213: -1033455902437521173
+    second: Style 1 Symbols SpriteSheet_6
+  - first:
+      213: -6559678615649781935
+    second: Style 1 Symbols SpriteSheet_7
+  - first:
+      213: -7542889211998216058
+    second: Style 1 Symbols SpriteSheet_8
+  - first:
+      213: -1578296441518792857
+    second: Style 1 Symbols SpriteSheet_9
+  - first:
+      213: -5170379182992676683
+    second: Style 1 Symbols SpriteSheet_10
+  - first:
+      213: -6232301862846958149
+    second: Style 1 Symbols SpriteSheet_11
+  - first:
+      213: -2906792492686223955
+    second: Style 1 Symbols SpriteSheet_12
+  - first:
+      213: -378935253578617614
+    second: Style 1 Symbols SpriteSheet_13
+  - first:
+      213: 5337190144068032164
+    second: Style 1 Symbols SpriteSheet_14
+  - first:
+      213: 6470505058303939683
+    second: Style 1 Symbols SpriteSheet_15
+  - first:
+      213: 3873265926842524546
+    second: Style 1 Symbols SpriteSheet_16
+  - first:
+      213: -7572330778460699111
+    second: Style 1 Symbols SpriteSheet_17
+  - first:
+      213: -1781102437488203489
+    second: Style 1 Symbols SpriteSheet_18
+  - first:
+      213: 5834126713925580938
+    second: Style 1 Symbols SpriteSheet_19
+  - first:
+      213: -1674142803233384971
+    second: Style 1 Symbols SpriteSheet_20
+  - first:
+      213: -1674978433336140249
+    second: Style 1 Symbols SpriteSheet_21
+  - first:
+      213: 7020034085398879276
+    second: Style 1 Symbols SpriteSheet_22
+  - first:
+      213: -3879352315769163207
+    second: Style 1 Symbols SpriteSheet_23
+  - first:
+      213: -1428658364355856840
+    second: Style 1 Symbols SpriteSheet_24
+  - first:
+      213: -7910873127721666508
+    second: Style 1 Symbols SpriteSheet_25
+  - first:
+      213: 704234451490885974
+    second: Style 1 Symbols SpriteSheet_26
+  - first:
+      213: -7853762070156559042
+    second: Style 1 Symbols SpriteSheet_27
+  - first:
+      213: 1536326485028256447
+    second: Style 1 Symbols SpriteSheet_28
+  - first:
+      213: 4504331342624160601
+    second: Style 1 Symbols SpriteSheet_29
+  - first:
+      213: 464527862568740977
+    second: Style 1 Symbols SpriteSheet_30
+  - first:
+      213: 4947620674726299123
+    second: Style 1 Symbols SpriteSheet_31
+  - first:
+      213: 947178572502763882
+    second: Style 1 Symbols SpriteSheet_32
+  - first:
+      213: -3521960188032854333
+    second: Style 1 Symbols SpriteSheet_33
+  - first:
+      213: -3369493616855847212
+    second: Style 1 Symbols SpriteSheet_34
+  - first:
+      213: -6290919885951363392
+    second: Style 1 Symbols SpriteSheet_35
+  - first:
+      213: 7032154969936982521
+    second: Style 1 Symbols SpriteSheet_36
+  - first:
+      213: 29076660403103185
+    second: Style 1 Symbols SpriteSheet_37
+  - first:
+      213: -6682198168265967682
+    second: Style 1 Symbols SpriteSheet_38
+  - first:
+      213: -7506048606308473184
+    second: Style 1 Symbols SpriteSheet_39
+  - first:
+      213: 1859310423086322534
+    second: Style 1 Symbols SpriteSheet_40
+  - first:
+      213: -6908976126444153287
+    second: Style 1 Symbols SpriteSheet_41
+  - first:
+      213: -2076070563805225253
+    second: Style 1 Symbols SpriteSheet_42
+  - first:
+      213: 6627165166794155138
+    second: Style 1 Symbols SpriteSheet_43
+  - first:
+      213: 651580173176954191
+    second: Style 1 Symbols SpriteSheet_44
+  - first:
+      213: 3492940238527260444
+    second: Style 1 Symbols SpriteSheet_45
+  - first:
+      213: 2115818155990404416
+    second: Style 1 Symbols SpriteSheet_46
+  - first:
+      213: 7192572318273166329
+    second: Style 1 Symbols SpriteSheet_47
+  - first:
+      213: 9020730976286970114
+    second: Style 1 Symbols SpriteSheet_48
+  - first:
+      213: -3600576926729527526
+    second: Style 1 Symbols SpriteSheet_49
+  - first:
+      213: -86269700082365767
+    second: Style 1 Symbols SpriteSheet_50
+  - first:
+      213: -3701486608979421372
+    second: Style 1 Symbols SpriteSheet_51
+  - first:
+      213: -5150865802366022574
+    second: Style 1 Symbols SpriteSheet_52
+  - first:
+      213: 3826872797025079442
+    second: Style 1 Symbols SpriteSheet_53
+  - first:
+      213: -7099627965156337644
+    second: Style 1 Symbols SpriteSheet_54
+  - first:
+      213: -1592537105424918834
+    second: Style 1 Symbols SpriteSheet_55
+  - first:
+      213: -7862780678477879727
+    second: Style 1 Symbols SpriteSheet_56
+  - first:
+      213: 1121898626649844959
+    second: Style 1 Symbols SpriteSheet_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 131
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0663ba753ed9fe5e0800000000000000
+      internalID: -1878108919836232096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 131
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2243cb836cb85bb50800000000000000
+      internalID: 6608341711707714594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 131
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952b139b6bd63b950800000000000000
+      internalID: 6463630521765311065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 131
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a147381ff25c59ff0800000000000000
+      internalID: -29901012801981414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 131
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6d70c9e84eb50a0800000000000000
+      internalID: -6891663503606163739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 132
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e754daa3e6bea3d0800000000000000
+      internalID: -3193413996819228697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 131
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be84e2c055d68a1f0800000000000000
+      internalID: -1033455902437521173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157f771cd0757f4a0800000000000000
+      internalID: -6559678615649781935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 113
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68068b2c936425790800000000000000
+      internalID: -7542889211998216058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 113
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f5205afb3c81ae0800000000000000
+      internalID: -1578296441518792857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 113
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8a5a3e68f1f38b0800000000000000
+      internalID: -5170379182992676683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 113
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb57004d97a6289a0800000000000000
+      internalID: -6232301862846958149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 113
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da55aa5f0aff8a7d0800000000000000
+      internalID: -2906792492686223955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 113
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fce2910560cdbaf0800000000000000
+      internalID: -378935253578617614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a614eb8822811a40800000000000000
+      internalID: 5337190144068032164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 93
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364139d711adbc950800000000000000
+      internalID: 6470505058303939683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 95
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283a21ac6da90c530800000000000000
+      internalID: 3873265926842524546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916c714e64da9e690800000000000000
+      internalID: -7572330778460699111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 94
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19eee015c04847e0800000000000000
+      internalID: -1781102437488203489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 95
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88b626f55bf6f050800000000000000
+      internalID: 5834126713925580938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 95
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f55ffd8dff34c8e0800000000000000
+      internalID: -1674142803233384971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 95
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e1f824df741c8e0800000000000000
+      internalID: -1674978433336140249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c95539ecb2c6160800000000000000
+      internalID: 7020034085398879276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 74
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9327dfb5f95c92ac0800000000000000
+      internalID: -3879352315769163207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 78
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836bd2779c26c2ce0800000000000000
+      internalID: -1428658364355856840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 75
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43877fecdcee63290800000000000000
+      internalID: -7910873127721666508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651d4bf9081f5c900800000000000000
+      internalID: 704234451490885974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 77
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3db1e91205d10390800000000000000
+      internalID: -7853762070156559042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba322f5cc0225510800000000000000
+      internalID: 1536326485028256447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 76
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b75cbbd79928e30800000000000000
+      internalID: 4504331342624160601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 59
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1786eac31a5527600800000000000000
+      internalID: 464527862568740977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 59
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f580704aca79a440800000000000000
+      internalID: 4947620674726299123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 59
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6983e0b4ed052d00800000000000000
+      internalID: 947178572502763882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 57
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6db3f7edb7f1fc0800000000000000
+      internalID: -3521960188032854333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 59
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de6c5668672d31d0800000000000000
+      internalID: -3369493616855847212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 41
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c69d67c1b922b8a0800000000000000
+      internalID: -6290919885951363392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 57
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1779cefab379160800000000000000
+      internalID: 7032154969936982521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 58
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5e49e811d476000800000000000000
+      internalID: 29076660403103185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 41
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7bdb57b201443a0800000000000000
+      internalID: -6682198168265967682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 41
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6ea22bf8825d790800000000000000
+      internalID: -7506048606308473184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 41
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663dd3f8af89dc910800000000000000
+      internalID: 1859310423086322534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 41
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93654ad71d26e10a0800000000000000
+      internalID: -6908976126444153287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 41
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde9ebb52d05033e0800000000000000
+      internalID: -2076070563805225253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 40
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284ab926b9b68fb50800000000000000
+      internalID: 6627165166794155138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 41
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d56ec17b0ea0900800000000000000
+      internalID: 651580173176954191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 25
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17e51bf3aa697030800000000000000
+      internalID: 3492940238527260444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 20
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d412d1765ec5d10800000000000000
+      internalID: 2115818155990404416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 23
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbdaf36a6621d360800000000000000
+      internalID: 7192572318273166329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 23
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20192ff6703103d70800000000000000
+      internalID: 9020730976286970114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 23
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f91df9c5e280ec0800000000000000
+      internalID: -3600576926729527526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 23
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba06b33a228dcef0800000000000000
+      internalID: -86269700082365767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 23
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4479aea5a8da1acc0800000000000000
+      internalID: -3701486608979421372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c044cd7d27488b0800000000000000
+      internalID: -5150865802366022574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 5
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29019438888cb1530800000000000000
+      internalID: 3826872797025079442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4185d6b2bfd097d90800000000000000
+      internalID: -7099627965156337644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6d483b0fb26e9e0800000000000000
+      internalID: -1592537105424918834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 5
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1566588b1aac1e290800000000000000
+      internalID: -7862780678477879727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Style 1 Symbols SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 5
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc667b5bd8c19f00800000000000000
+      internalID: 1121898626649844959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Style 1 Symbols SpriteSheet_0: -1878108919836232096
+      Style 1 Symbols SpriteSheet_1: 6608341711707714594
+      Style 1 Symbols SpriteSheet_10: -5170379182992676683
+      Style 1 Symbols SpriteSheet_11: -6232301862846958149
+      Style 1 Symbols SpriteSheet_12: -2906792492686223955
+      Style 1 Symbols SpriteSheet_13: -378935253578617614
+      Style 1 Symbols SpriteSheet_14: 5337190144068032164
+      Style 1 Symbols SpriteSheet_15: 6470505058303939683
+      Style 1 Symbols SpriteSheet_16: 3873265926842524546
+      Style 1 Symbols SpriteSheet_17: -7572330778460699111
+      Style 1 Symbols SpriteSheet_18: -1781102437488203489
+      Style 1 Symbols SpriteSheet_19: 5834126713925580938
+      Style 1 Symbols SpriteSheet_2: 6463630521765311065
+      Style 1 Symbols SpriteSheet_20: -1674142803233384971
+      Style 1 Symbols SpriteSheet_21: -1674978433336140249
+      Style 1 Symbols SpriteSheet_22: 7020034085398879276
+      Style 1 Symbols SpriteSheet_23: -3879352315769163207
+      Style 1 Symbols SpriteSheet_24: -1428658364355856840
+      Style 1 Symbols SpriteSheet_25: -7910873127721666508
+      Style 1 Symbols SpriteSheet_26: 704234451490885974
+      Style 1 Symbols SpriteSheet_27: -7853762070156559042
+      Style 1 Symbols SpriteSheet_28: 1536326485028256447
+      Style 1 Symbols SpriteSheet_29: 4504331342624160601
+      Style 1 Symbols SpriteSheet_3: -29901012801981414
+      Style 1 Symbols SpriteSheet_30: 464527862568740977
+      Style 1 Symbols SpriteSheet_31: 4947620674726299123
+      Style 1 Symbols SpriteSheet_32: 947178572502763882
+      Style 1 Symbols SpriteSheet_33: -3521960188032854333
+      Style 1 Symbols SpriteSheet_34: -3369493616855847212
+      Style 1 Symbols SpriteSheet_35: -6290919885951363392
+      Style 1 Symbols SpriteSheet_36: 7032154969936982521
+      Style 1 Symbols SpriteSheet_37: 29076660403103185
+      Style 1 Symbols SpriteSheet_38: -6682198168265967682
+      Style 1 Symbols SpriteSheet_39: -7506048606308473184
+      Style 1 Symbols SpriteSheet_4: -6891663503606163739
+      Style 1 Symbols SpriteSheet_40: 1859310423086322534
+      Style 1 Symbols SpriteSheet_41: -6908976126444153287
+      Style 1 Symbols SpriteSheet_42: -2076070563805225253
+      Style 1 Symbols SpriteSheet_43: 6627165166794155138
+      Style 1 Symbols SpriteSheet_44: 651580173176954191
+      Style 1 Symbols SpriteSheet_45: 3492940238527260444
+      Style 1 Symbols SpriteSheet_46: 2115818155990404416
+      Style 1 Symbols SpriteSheet_47: 7192572318273166329
+      Style 1 Symbols SpriteSheet_48: 9020730976286970114
+      Style 1 Symbols SpriteSheet_49: -3600576926729527526
+      Style 1 Symbols SpriteSheet_5: -3193413996819228697
+      Style 1 Symbols SpriteSheet_50: -86269700082365767
+      Style 1 Symbols SpriteSheet_51: -3701486608979421372
+      Style 1 Symbols SpriteSheet_52: -5150865802366022574
+      Style 1 Symbols SpriteSheet_53: 3826872797025079442
+      Style 1 Symbols SpriteSheet_54: -7099627965156337644
+      Style 1 Symbols SpriteSheet_55: -1592537105424918834
+      Style 1 Symbols SpriteSheet_56: -7862780678477879727
+      Style 1 Symbols SpriteSheet_57: 1121898626649844959
+      Style 1 Symbols SpriteSheet_6: -1033455902437521173
+      Style 1 Symbols SpriteSheet_7: -6559678615649781935
+      Style 1 Symbols SpriteSheet_8: -7542889211998216058
+      Style 1 Symbols SpriteSheet_9: -1578296441518792857
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

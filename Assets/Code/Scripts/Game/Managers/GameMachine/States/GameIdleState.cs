@@ -14,7 +14,7 @@ namespace SPO.Managers.GameMachine.States
         public override void Enter()
         {
             Debug.Log("GameIdleState entered.");
-            Context.NetMachineController.TriggerResetGame();
+            Context.MachineController.TriggerResetGame();
         }
         
         public override void Exit()

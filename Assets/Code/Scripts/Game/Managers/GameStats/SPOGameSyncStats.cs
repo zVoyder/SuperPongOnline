@@ -1,6 +1,5 @@
 namespace SPO.Managers.GameStats
 {
-    using System;
     using UnityEngine;
     using Mirror;
     using VUDK.Extensions;
@@ -17,6 +16,8 @@ namespace SPO.Managers.GameStats
         [field: SerializeField, Range(0f, 1f), SyncVar]
         public float BallStartAngleRange { get; private set; } = 0.7f;
         [field: SerializeField, SyncVar]
+        public float BallSpeedMultiplier { get; private set; } = 1.1f;
+        [field: SerializeField, SyncVar]
         public int ScoreToWin { get; private set; } = 5;
         [field: SerializeField, SyncVar]
         public float TopBoundary { get; private set; } = 7.5f;
@@ -24,6 +25,11 @@ namespace SPO.Managers.GameStats
         public float BottomBoundary { get; private set; } = -7.5f;
 
         private void Awake()
+        {
+            SetNetSyncs();
+        }
+        
+        private void SetNetSyncs()
         {
             // Only the server should be able to change these values
             syncDirection = SyncDirection.ServerToClient;

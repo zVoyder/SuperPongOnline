@@ -8,7 +8,7 @@
     {
         protected Rigidbody Rigidbody { get; private set; }
         public override bool IsGrounded => Physics.CheckSphere(transform.position + GroundedOffset, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
-        
+
         protected virtual void Awake()
         {
             TryGetComponent(out Rigidbody rb);
@@ -32,7 +32,7 @@
 
         public override bool MoveCharacter(Vector2 direction)
         {
-            if(!CanMove) return false;
+            if (!CanMove) return false;
             base.MoveCharacter(direction);
 
             if (!IsSliding)
@@ -45,7 +45,7 @@
                     SetVelocity(velocity);
                 }
             }
-            
+
             return true;
         }
 
@@ -80,7 +80,7 @@
 
         public override bool StopCharacter()
         {
-            if(!CanMove) return false;
+            if (!CanMove) return false;
 
             base.StopCharacter();
             SetVelocity(new Vector3(0f, Rigidbody.linearVelocity.y, 0f));
@@ -95,7 +95,7 @@
         protected override bool IsOnSlope(out float slopeAngle, out Vector3 slopeDirection)
         {
             if (Physics.Raycast(transform.position + GroundedOffset, Vector3.down, out RaycastHit hit, GroundedRadius, GroundLayers))
-            { 
+            {
                 slopeAngle = Vector3.Angle(hit.normal, Vector3.up);
 
                 if (slopeAngle > 1f)
@@ -110,6 +110,7 @@
             return false;
         }
 
+#if UNITY_EDITOR
         protected override void OnDrawGizmos()
         {
             base.OnDrawGizmos();
@@ -118,5 +119,6 @@
             Gizmos.DrawSphere(transform.position + GroundedOffset, 0.1f);
             Gizmos.DrawRay(transform.position + GroundedOffset, Vector3.down * GroundedRadius);
         }
+#endif
     }
 }

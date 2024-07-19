@@ -2,7 +2,6 @@ namespace SPO.Patterns.Factories
 {
     using VUDK.Patterns.StateMachine;
     using SPO.Managers;
-    using SPO.Player.Interfaces;
     using SPO.Managers.GameMachine;
     using SPO.Managers.GameMachine.Contexts;
     using SPO.Managers.GameMachine.Data;
@@ -13,9 +12,9 @@ namespace SPO.Patterns.Factories
     /// </summary>
     public static class MachineFactory
     {
-        public static GameContext Create(SPOGameManager gameManager, SPOGameNetMachineController netMachineController)
+        public static GameContext Create(SPOGameManager gameManager, SPONetGameMachineController machineController)
         {
-            return new GameContext(gameManager, netMachineController);
+            return new GameContext(gameManager, machineController);
         }
         
         public static T Create<T>(GameStateKeys stateKey, StateMachine relatedStateMachine, GameContext context) where T : State<GameContext>

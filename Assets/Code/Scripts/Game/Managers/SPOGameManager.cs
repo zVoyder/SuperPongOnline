@@ -3,13 +3,16 @@ namespace SPO.Managers
     using UnityEngine;
     using VUDK.Generic.Managers.Main.Bases;
     using SPO.Managers.GameMachine;
+    using SPO.Managers.Networking;
     
     public class SPOGameManager : GameManagerBase
     {
-        [field: Header("Managers")]
+        [field: Header("Network Game Managers")]
         [field: SerializeField]
-        public SPOGameNetMachineController GameNetMachineController { get; private set; }
+        public SPONetGameManager NetGameManager { get; private set; }
         [field: SerializeField]
-        public SPOGameoverNetManager GameoverNetManager { get; private set; }
+        public SPONetGameMachineController NetGameMachineController { get; private set; }
+        [field: SerializeField]
+        public SPONetGameoverManager NetGameoverManager { get; private set; }
     }
 }

@@ -20,7 +20,7 @@ namespace SPO.Debug
             if (!Application.isPlaying) return;
             
             GUILayout.BeginArea(new Rect(10, 10, 200, 200));
-            GUILayout.Label("Ball ID: " + _ballManager.AssignedPlayerID);
+            GUILayout.Label("Ball ID: " + _ballManager.AttackerPlayerID);
             GUILayout.EndArea();
         }
     }

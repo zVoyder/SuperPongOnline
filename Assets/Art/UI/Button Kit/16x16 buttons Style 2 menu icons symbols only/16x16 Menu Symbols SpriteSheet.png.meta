@@ -1,0 +1,1655 @@
+fileFormatVersion: 2
+guid: ff28f40667756df4ebbed1f4a041851d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -650272802897338099
+    second: 16x16 Menu Symbols SpriteSheet_0
+  - first:
+      213: 5803721381781951721
+    second: 16x16 Menu Symbols SpriteSheet_1
+  - first:
+      213: -5813873372560729839
+    second: 16x16 Menu Symbols SpriteSheet_2
+  - first:
+      213: 7546852110125219913
+    second: 16x16 Menu Symbols SpriteSheet_3
+  - first:
+      213: -7873378691059657650
+    second: 16x16 Menu Symbols SpriteSheet_4
+  - first:
+      213: -8653365424218076606
+    second: 16x16 Menu Symbols SpriteSheet_5
+  - first:
+      213: 6324385049502263930
+    second: 16x16 Menu Symbols SpriteSheet_6
+  - first:
+      213: 6578392594146608869
+    second: 16x16 Menu Symbols SpriteSheet_7
+  - first:
+      213: -5372984103846511806
+    second: 16x16 Menu Symbols SpriteSheet_8
+  - first:
+      213: -2861390782400814405
+    second: 16x16 Menu Symbols SpriteSheet_9
+  - first:
+      213: -5968811236092536786
+    second: 16x16 Menu Symbols SpriteSheet_10
+  - first:
+      213: 466972850969778491
+    second: 16x16 Menu Symbols SpriteSheet_11
+  - first:
+      213: -6423735215882641033
+    second: 16x16 Menu Symbols SpriteSheet_12
+  - first:
+      213: -2835838004093342069
+    second: 16x16 Menu Symbols SpriteSheet_13
+  - first:
+      213: -3144040900604493163
+    second: 16x16 Menu Symbols SpriteSheet_14
+  - first:
+      213: 2248908461096627277
+    second: 16x16 Menu Symbols SpriteSheet_15
+  - first:
+      213: -7103798729921409569
+    second: 16x16 Menu Symbols SpriteSheet_16
+  - first:
+      213: 8511878707217069263
+    second: 16x16 Menu Symbols SpriteSheet_17
+  - first:
+      213: 8239857811231617229
+    second: 16x16 Menu Symbols SpriteSheet_18
+  - first:
+      213: -3282832756612241591
+    second: 16x16 Menu Symbols SpriteSheet_19
+  - first:
+      213: 6907974738378881648
+    second: 16x16 Menu Symbols SpriteSheet_20
+  - first:
+      213: 618543785793795511
+    second: 16x16 Menu Symbols SpriteSheet_21
+  - first:
+      213: 6476325863953477922
+    second: 16x16 Menu Symbols SpriteSheet_22
+  - first:
+      213: 8839990320770154407
+    second: 16x16 Menu Symbols SpriteSheet_23
+  - first:
+      213: 1570021217884351309
+    second: 16x16 Menu Symbols SpriteSheet_24
+  - first:
+      213: 5543397424115234964
+    second: 16x16 Menu Symbols SpriteSheet_25
+  - first:
+      213: 1551047022407018094
+    second: 16x16 Menu Symbols SpriteSheet_26
+  - first:
+      213: 5428203388448496478
+    second: 16x16 Menu Symbols SpriteSheet_27
+  - first:
+      213: 3127812084817001730
+    second: 16x16 Menu Symbols SpriteSheet_28
+  - first:
+      213: 8919638425624820062
+    second: 16x16 Menu Symbols SpriteSheet_29
+  - first:
+      213: -4012342861586978440
+    second: 16x16 Menu Symbols SpriteSheet_30
+  - first:
+      213: 2680816605926475838
+    second: 16x16 Menu Symbols SpriteSheet_31
+  - first:
+      213: -1087883173326547517
+    second: 16x16 Menu Symbols SpriteSheet_32
+  - first:
+      213: -847561277096532813
+    second: 16x16 Menu Symbols SpriteSheet_33
+  - first:
+      213: 5740360174902697706
+    second: 16x16 Menu Symbols SpriteSheet_34
+  - first:
+      213: 4981524268297433029
+    second: 16x16 Menu Symbols SpriteSheet_35
+  - first:
+      213: -8079796425401910313
+    second: 16x16 Menu Symbols SpriteSheet_36
+  - first:
+      213: 1588075815740007241
+    second: 16x16 Menu Symbols SpriteSheet_37
+  - first:
+      213: -4375900133839346696
+    second: 16x16 Menu Symbols SpriteSheet_38
+  - first:
+      213: 5279162431966516726
+    second: 16x16 Menu Symbols SpriteSheet_39
+  - first:
+      213: 3036465411942069954
+    second: 16x16 Menu Symbols SpriteSheet_40
+  - first:
+      213: 4015900539015797613
+    second: 16x16 Menu Symbols SpriteSheet_41
+  - first:
+      213: -789408991957288659
+    second: 16x16 Menu Symbols SpriteSheet_42
+  - first:
+      213: 8733393274907730272
+    second: 16x16 Menu Symbols SpriteSheet_43
+  - first:
+      213: -6944015775073737262
+    second: 16x16 Menu Symbols SpriteSheet_44
+  - first:
+      213: -6186330126551605507
+    second: 16x16 Menu Symbols SpriteSheet_45
+  - first:
+      213: 261263445658820981
+    second: 16x16 Menu Symbols SpriteSheet_46
+  - first:
+      213: 4345846246668617202
+    second: 16x16 Menu Symbols SpriteSheet_47
+  - first:
+      213: 1942051014832220577
+    second: 16x16 Menu Symbols SpriteSheet_48
+  - first:
+      213: 5737749293870295393
+    second: 16x16 Menu Symbols SpriteSheet_49
+  - first:
+      213: 1419707760797931030
+    second: 16x16 Menu Symbols SpriteSheet_50
+  - first:
+      213: -4213730230504985035
+    second: 16x16 Menu Symbols SpriteSheet_51
+  - first:
+      213: 2329933438147251987
+    second: 16x16 Menu Symbols SpriteSheet_52
+  - first:
+      213: 8920937351734914688
+    second: 16x16 Menu Symbols SpriteSheet_53
+  - first:
+      213: -7047084207870950840
+    second: 16x16 Menu Symbols SpriteSheet_54
+  - first:
+      213: 7398483151945179777
+    second: 16x16 Menu Symbols SpriteSheet_55
+  - first:
+      213: -2119380874319259076
+    second: 16x16 Menu Symbols SpriteSheet_56
+  - first:
+      213: 7369086371090700987
+    second: 16x16 Menu Symbols SpriteSheet_57
+  - first:
+      213: 4954449850212564125
+    second: 16x16 Menu Symbols SpriteSheet_58
+  - first:
+      213: -2768253053238823690
+    second: 16x16 Menu Symbols SpriteSheet_59
+  - first:
+      213: -902307187067971198
+    second: 16x16 Menu Symbols SpriteSheet_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01e430c454c9f6f0800000000000000
+      internalID: -650272802897338099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 4
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4d378e8d5fa8050800000000000000
+      internalID: 5803721381781951721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 4
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1195a6b88f8f05fa0800000000000000
+      internalID: -5813873372560729839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 4
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940cb6c520ecbb860800000000000000
+      internalID: 7546852110125219913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 4
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e445241abc32cb290800000000000000
+      internalID: -7873378691059657650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a85d18ef119e780800000000000000
+      internalID: -8653365424218076606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7aaf5ac1bab4c750800000000000000
+      internalID: 6324385049502263930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 9
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e64b27e5352b4b50800000000000000
+      internalID: 6578392594146608869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b7862cc635f65b0800000000000000
+      internalID: -5372984103846511806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb22c636e3c4a48d0800000000000000
+      internalID: -2861390782400814405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28185d0ec58a2da0800000000000000
+      internalID: -5968811236092536786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 4
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b391ec575550b7600800000000000000
+      internalID: 466972850969778491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 5
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771e5260bde4ad6a0800000000000000
+      internalID: -6423735215882641033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ea6753c5415a8d0800000000000000
+      internalID: -2835838004093342069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 4
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5928b20757f1e54d0800000000000000
+      internalID: -3144040900604493163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ce804845ab53f10800000000000000
+      internalID: 2248908461096627277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 4
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddc92351bc3a6d90800000000000000
+      internalID: -7103798729921409569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 4
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc472ea1694402670800000000000000
+      internalID: 8511878707217069263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0303ec50bd95270800000000000000
+      internalID: 8239857811231617229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9476c1540090172d0800000000000000
+      internalID: -3282832756612241591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07af17eac6e0edf50800000000000000
+      internalID: 6907974738378881648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5b346cb42859800800000000000000
+      internalID: 618543785793795511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2213f9a6f0880e950800000000000000
+      internalID: 6476325863953477922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 4
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af75674c54fdaa70800000000000000
+      internalID: 8839990320770154407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ba2d5baf5d9c510800000000000000
+      internalID: 1570021217884351309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 7
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4983439469a1eec40800000000000000
+      internalID: 5543397424115234964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e666f709c0d668510800000000000000
+      internalID: 1551047022407018094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 7
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b5b01d83ad45b40800000000000000
+      internalID: 5428203388448496478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20df0bfe488386b20800000000000000
+      internalID: 3127812084817001730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59ba4cc3ebe8cb70800000000000000
+      internalID: 8919638425624820062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 7
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879a80afc6b4158c0800000000000000
+      internalID: -4012342861586978440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e384730ef7c243520800000000000000
+      internalID: 2680816605926475838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c51fb8840017e0f0800000000000000
+      internalID: -1087883173326547517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 7
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4e841528bdc34f0800000000000000
+      internalID: -847561277096532813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeedfd35a2bd9af40800000000000000
+      internalID: 5740360174902697706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf2bd3cdede12540800000000000000
+      internalID: 4981524268297433029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 4
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbb27ea5fbcedf80800000000000000
+      internalID: -8079796425401910313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94362995a8af90610800000000000000
+      internalID: 1588075815740007241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 4
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3ebe5430ea543c0800000000000000
+      internalID: -4375900133839346696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 6
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f593fcf24a534940800000000000000
+      internalID: 5279162431966516726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6319b4431b32a20800000000000000
+      internalID: 3036465411942069954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b165953485bb730800000000000000
+      internalID: 4015900539015797613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29f2eb44b47b05f0800000000000000
+      internalID: -789408991957288659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 4
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06129aa79ee333970800000000000000
+      internalID: 8733393274907730272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5650c8176e1af90800000000000000
+      internalID: -6944015775073737262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe1897c68db52aa0800000000000000
+      internalID: -6186330126551605507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571e94738b130a300800000000000000
+      internalID: 261263445658820981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5c525d22c8f4c30800000000000000
+      internalID: 4345846246668617202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9e2cacb1d83fa10800000000000000
+      internalID: 1942051014832220577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 4
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1692367359490af40800000000000000
+      internalID: 5737749293870295393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 4
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616d93fbfa0d3b310800000000000000
+      internalID: 1419707760797931030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 6
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53eec6f3ea2d585c0800000000000000
+      internalID: -4213730230504985035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 6
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f42131e16955020800000000000000
+      internalID: 2329933438147251987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 5
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e6ca991498dcb70800000000000000
+      internalID: 8920937351734914688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 5
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842469fff3ab33e90800000000000000
+      internalID: -7047084207870950840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 5
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182a7645a31bca660800000000000000
+      internalID: 7398483151945179777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 5
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a9172e2527692e0800000000000000
+      internalID: -2119380874319259076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 5
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba980ce201444660800000000000000
+      internalID: 7369086371090700987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 5
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c386393edb1c440800000000000000
+      internalID: 4954449850212564125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 4
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f43f41d3803599d0800000000000000
+      internalID: -2768253053238823690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Menu Symbols SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 4
+        width: 64
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289188cd46c5a73f0800000000000000
+      internalID: -902307187067971198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

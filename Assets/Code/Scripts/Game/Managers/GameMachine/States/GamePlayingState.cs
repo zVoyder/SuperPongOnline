@@ -17,12 +17,12 @@ namespace SPO.Managers.GameMachine.States
         public override void Enter()
         {
             Debug.Log("GamePlayingState entered.");
-            EventManager.Ins.AddListener<GoalEventArgs>(SPOEvents.OnGoalScored, OnGoalScored);
+            EventManager.Ins.AddListener<GoalEventArgs>(SPOServerEvents.OnGoalScored, OnGoalScored);
         }
         
         public override void Exit()
         {
-            EventManager.Ins.RemoveListener<GoalEventArgs>(SPOEvents.OnGoalScored, OnGoalScored);
+            EventManager.Ins.RemoveListener<GoalEventArgs>(SPOServerEvents.OnGoalScored, OnGoalScored);
         }
 
         public override void Process()
@@ -35,13 +35,13 @@ namespace SPO.Managers.GameMachine.States
 
         private void OnGoalScored(GoalEventArgs args)
         {
-            Context.NetMachineController.EndBall();
+            Context.MachineController.EndBall();
             
             // Check on the server if someone won
-            if (Context.NetMachineController.CheckVictory(args.PlayerID, args.ScoreValue))
-                Context.NetMachineController.ServerGameEndWinner(args.PlayerID);
+            if (Context.MachineController.CheckVictory(args.PlayerID, args.ScoreValue))
+                Context.MachineController.ServerGameEndWinner(args.PlayerID);
             else
-                Context.NetMachineController.ServerGameBegin();
+                Context.MachineController.ServerGameBegin();
         }
     }
 }
