@@ -62,7 +62,7 @@ namespace SPO.Player
 
         public override void OnStartClient()
         {
-            if (isLocalPlayer)
+            if (isOwned)
                 OnLocalPlayer();
             else
                 OnRemotePlayer();

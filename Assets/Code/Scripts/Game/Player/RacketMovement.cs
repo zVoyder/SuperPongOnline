@@ -1,6 +1,5 @@
 namespace SPO.Player
 {
-    using System;
     using UnityEngine;
     using UnityEngine.InputSystem;
     using Mirror;
@@ -51,7 +50,7 @@ namespace SPO.Player
         {
             // This control must be here since if we do this on the Command Method,
             // the command will be called on the server
-            if (!isLocalPlayer) return;
+            if (!isOwned) return; // Do not use isLocalPlayer since this is not the local player obeject
             
             Vector2 direction = InputsManager.Inputs.Player.Movement.ReadValue<Vector2>();
             float v = Mathf.RoundToInt(direction.y); // Round the value to 1, 0 or -1
@@ -61,7 +60,7 @@ namespace SPO.Player
         [ClientCallback]
         private void OnStopMoveInput(InputAction.CallbackContext obj)
         {
-            if (!isLocalPlayer) return;
+            if (!isOwned) return;
             
             CmdStop();
         }

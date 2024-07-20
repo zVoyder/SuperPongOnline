@@ -2,7 +2,7 @@
 {
     using VUDK.Generic.Managers.Main.Bases;
 
-    public interface ICastSceneManager<T> where T : SceneManagerBase
+    public interface ICastSceneManager<T>
     {
         public T SceneManager { get; }
     }

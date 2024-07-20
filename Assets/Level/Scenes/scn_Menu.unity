@@ -414,9 +414,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1309539288}
-        m_TargetAssemblyTypeName: SPO.Managers.SPOSteamLobbyManager, Assembly-CSharp
-        m_MethodName: FindLobbies
+      - m_Target: {fileID: 974319744}
+        m_TargetAssemblyTypeName: SPO.UI.MainMenu.UIMenuNetActions, Assembly-CSharp
+        m_MethodName: CasualMatchButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -546,7 +546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 479879521}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 974319744}
+        m_TargetAssemblyTypeName: SPO.UI.MainMenu.UINetActions, Assembly-CSharp
+        m_MethodName: ReadyToggleButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &479879521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,12 +606,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4002570876564385932, guid: ec2f0f10d6ecde84390cf8dd4473131f, type: 3}
-      propertyPath: playerPrefab
-      value: 
-      objectReference: {fileID: 6942860949998348425, guid: 314cec3b965cdb641a086fe7d43c4a78, type: 3}
-    - target: {fileID: 4002570876564385932, guid: ec2f0f10d6ecde84390cf8dd4473131f, type: 3}
-      propertyPath: _transportType
-      value: 0
+      propertyPath: evaluationMethod
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6744751678615668179, guid: ec2f0f10d6ecde84390cf8dd4473131f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -645,8 +653,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: pf_NetworkManager
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7974263644053070246, guid: ec2f0f10d6ecde84390cf8dd4473131f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -666,7 +673,7 @@ GameObject:
   - component: {fileID: 621967907}
   - component: {fileID: 621967908}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +756,7 @@ RectTransform:
   m_Children:
   - {fileID: 912911262}
   - {fileID: 1882982826}
-  m_Father: {fileID: 951926782}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1001,9 +1008,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1309539288}
-        m_TargetAssemblyTypeName: SPO.Managers.SPOSteamLobbyManager, Assembly-CSharp
-        m_MethodName: CreatePrivateLobby
+      - m_Target: {fileID: 974319744}
+        m_TargetAssemblyTypeName: SPO.UI.MainMenu.UIMenuNetActions, Assembly-CSharp
+        m_MethodName: PrivateMatchButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1098,39 +1105,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912911261}
   m_CullTransparentMesh: 1
---- !u!1 &951926781
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 951926782}
-  m_Layer: 0
-  m_Name: UI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &951926782
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951926781}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 964.8143, y: 518.62164, z: -4.3996506}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1501534707}
-  - {fileID: 621967906}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956836754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1253,10 @@ PrefabInstance:
       propertyPath: sceneId
       value: 1213727623
       objectReference: {fileID: 0}
+    - target: {fileID: 700657922286231881, guid: 746276899113a2e4fa74801cdad4e5fc, type: 3}
+      propertyPath: sceneId
+      value: 2851922943
+      objectReference: {fileID: 0}
     - target: {fileID: 951495771451431923, guid: 746276899113a2e4fa74801cdad4e5fc, type: 3}
       propertyPath: sceneId
       value: 1221885540
@@ -1292,9 +1270,9 @@ PrefabInstance:
       value: pf_MainManager
       objectReference: {fileID: 0}
     - target: {fileID: 1877493809883886606, guid: 746276899113a2e4fa74801cdad4e5fc, type: 3}
-      propertyPath: _playerTagPrefab
+      propertyPath: _lobbyTimeText
       value: 
-      objectReference: {fileID: 1812745431346291085, guid: 4db37f777c4e9224d80b9393feae4c08, type: 3}
+      objectReference: {fileID: 956836756}
     - target: {fileID: 1877493809883886606, guid: 746276899113a2e4fa74801cdad4e5fc, type: 3}
       propertyPath: _playerTagsPanel
       value: 
@@ -1396,6 +1374,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746276899113a2e4fa74801cdad4e5fc, type: 3}
+--- !u!114 &974319744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7074640860609614698, guid: 746276899113a2e4fa74801cdad4e5fc, type: 3}
+  m_PrefabInstance: {fileID: 974319743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9311523a4eba46a9ac31cfbb36ce8a3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1055585887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,9 +1554,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1309539288}
-        m_TargetAssemblyTypeName: SPO.Managers.SPOSteamLobbyManager, Assembly-CSharp
-        m_MethodName: DisconnectFromLobby
+      - m_Target: {fileID: 974319744}
+        m_TargetAssemblyTypeName: SPO.UI.MainMenu.UINetActions, Assembly-CSharp
+        m_MethodName: LeaveLobbyButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1858,17 +1847,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171783904}
   m_CullTransparentMesh: 1
---- !u!114 &1309539288 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6175828076536043400, guid: ec2f0f10d6ecde84390cf8dd4473131f, type: 3}
-  m_PrefabInstance: {fileID: 490246543}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f35ed265050149279c0c55da691f6927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1461407448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,52 +1985,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461407448}
   m_CullTransparentMesh: 1
---- !u!1 &1501534706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1501534707}
-  - component: {fileID: 1501534712}
-  m_Layer: 0
-  m_Name: UILobbyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1501534707
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501534706}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -536.2042, y: 60.959045, z: -4.414258}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 951926782}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1501534712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501534706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59e97e100784e9db2d22d7df8b38919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerTagsPanel: {fileID: 0}
-  _playerTagPrefab: {fileID: 0}
 --- !u!1 &1620974584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,9 +2507,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1309539288}
-        m_TargetAssemblyTypeName: SPO.Managers.SPOSteamLobbyManager, Assembly-CSharp
-        m_MethodName: CreatePublicLobby
+      - m_Target: {fileID: 974319744}
+        m_TargetAssemblyTypeName: SPO.UI.MainMenu.UIMenuNetActions, Assembly-CSharp
+        m_MethodName: PublicMatchButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2761,4 +2693,4 @@ SceneRoots:
   - {fileID: 974319743}
   - {fileID: 490246543}
   - {fileID: 1978709842}
-  - {fileID: 951926782}
+  - {fileID: 621967906}

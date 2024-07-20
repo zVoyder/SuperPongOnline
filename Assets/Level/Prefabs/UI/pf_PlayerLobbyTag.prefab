@@ -210,6 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d0fc496586410486d8eb89ce6f408e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _readyImage: {fileID: 2206467405493043164}
+  _readyOnSprite: {fileID: 4441420298110153161, guid: a7f597d5fdfa673499a9d58e154fa847, type: 3}
+  _readyOffSprite: {fileID: -4139715812692763486, guid: 9d6373288f899ca47b5aefe4333430a9, type: 3}
   _imageAvatar: {fileID: 7510873122860449157}
   _textPlayerName: {fileID: 1916948186105364193}
 --- !u!1 &3965053293550480381
@@ -296,7 +299,7 @@ GameObject:
   - component: {fileID: 5298477004231430485}
   - component: {fileID: 2206467405493043164}
   m_Layer: 5
-  m_Name: ReadyIcon
+  m_Name: ReadyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

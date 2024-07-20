@@ -7,11 +7,11 @@ namespace SPO.Managers
     
     public class SPOGameManager : GameManagerBase
     {
-        [field: Header("Network Game Managers")]
+        [field: Header("Managers")]
+        [field: SerializeField]
+        public SPOGameMachine GameMachine { get; private set; }
         [field: SerializeField]
         public SPONetGameManager NetGameManager { get; private set; }
-        [field: SerializeField]
-        public SPONetGameMachineController NetGameMachineController { get; private set; }
         [field: SerializeField]
         public SPONetGameoverManager NetGameoverManager { get; private set; }
     }

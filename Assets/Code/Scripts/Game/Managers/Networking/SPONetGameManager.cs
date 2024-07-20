@@ -2,12 +2,13 @@ namespace SPO.Managers.Networking
 {
     using UnityEngine;
     using Mirror;
+    using Player;
     using VUDK.Generic.Managers.Main;
     using VUDK.Generic.Managers.Main.Interfaces.Casts;
     using SPO.Level.Ball;
     using SPO.Patterns.Factories;
 
-    public class SPONetGameManager : NetworkBehaviour, ICastGameManager<SPOGameManager>
+    public class SPONetGameManager : NetworkBehaviour, ICastSceneManager<SPOSceneManager>, ICastNetworkManager<SPONetworkManager>
     {
         [field: Header("Game Spawns")]
         [field: SerializeField]
@@ -20,26 +21,49 @@ namespace SPO.Managers.Networking
         public BallManager SpawnedBall { get; private set; }
         
         public SPOGameManager GameManager => MainManager.Ins.GameManager as SPOGameManager;
-
+        public SPOSceneManager SceneManager => MainManager.Ins.SceneManager as SPOSceneManager;
+        public SPONetworkManager NetworkManager => MainManager.Ins.NetworkManager as SPONetworkManager;
+        
         private void OnEnable()
         {
             SPONetworkManager.OnServerClientDisconnected += OnServerClientDisconnected;
+            SPONetworkManager.OnServerChangedScene += OnServerChangedScene;
         }
-        
+
         private void OnDisable()
         {
             SPONetworkManager.OnServerClientDisconnected -= OnServerClientDisconnected;
+            SPONetworkManager.OnServerChangedScene -= OnServerChangedScene;
         }
 
-        private void OnServerClientDisconnected(NetworkConnectionToClient obj)
+        private void OnServerClientDisconnected(NetworkConnectionToClient conn)
         { 
             DespawnBall();
+        }
+        
+        private void OnServerChangedScene(string scenePath)
+        {
+            if (SceneManager.NetSceneManager.IsGameScene(scenePath))
+                StartGame();
         }
         
         [Server]
         public void StartGame()
         {
-            GameManager.NetGameMachineController.ServerGameBegin();
+            SpawnPlayerRackets();
+            GameManager.GameMachine.NetMachineController.ServerGameBegin();
+        }
+        
+        [Server]
+        public void SpawnPlayerRackets()
+        {
+            Debug.Log("Spawning player rackets in SPONetGameManager for all players, count: " + NetworkManager.NetPlayers.Count);
+            for (int i = 0; i < NetworkManager.NetPlayers.Count; i++)
+            {
+                NetPlayerController netPlayer = NetworkManager.NetPlayers[i];
+                netPlayer.SpawnPlayerRacket(i == 0 ? Player1SpawnPoint : Player2SpawnPoint);
+                Debug.Log($"Spawning player racket for player {netPlayer.NetData.PlayerName}");
+            }
         }
         
         [Server]

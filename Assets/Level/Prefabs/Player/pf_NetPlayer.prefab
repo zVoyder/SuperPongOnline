@@ -49,6 +49,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  _playerRacketPrefab: {fileID: 6213176820381971582, guid: ade5760788bb0c14db4fd470ac47c08b, type: 3}
 --- !u!114 &7059533640322501547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,9 +65,6 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  <ConnectionID>k__BackingField: -1
-  <PlayerIdNumber>k__BackingField: 0
-  <PlayerSteamID>k__BackingField: 0
 --- !u!114 &1110430771433276923
 MonoBehaviour:
   m_ObjectHideFlags: 0

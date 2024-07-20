@@ -1,5 +1,6 @@
 namespace SPO.UI.MainMenu
 {
+    using Player;
     using UnityEngine;
     using UnityEngine.Serialization;
     using SPO.Managers.Networking;
@@ -14,12 +15,14 @@ namespace SPO.UI.MainMenu
 
         private void OnEnable()
         {
+            NetPlayerController.OnPlayerStopClient += GoToMenu;
             SPOSteamLobbyManager.OnJoinedLobby += OnJoinedLobby;
             SPOSteamLobbyManager.OnLeftLobby += OnLeftLobby;
         }
         
         private void OnDisable()
         {
+            NetPlayerController.OnPlayerStopClient -= GoToMenu;
             SPOSteamLobbyManager.OnJoinedLobby -= OnJoinedLobby;
             SPOSteamLobbyManager.OnLeftLobby -= OnLeftLobby;
         }

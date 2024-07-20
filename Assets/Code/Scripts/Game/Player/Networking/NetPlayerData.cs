@@ -1,7 +1,6 @@
 namespace SPO.Player
 {
     using System;
-    using UnityEngine;
     using Mirror;
     using Steamworks;
     using VUDK.Patterns.Initialization.Interfaces;
@@ -15,10 +14,14 @@ namespace SPO.Player
         public int PlayerIdNumber { get; private set; }
         [field: SyncVar]
         public ulong PlayerSteamID { get; private set; }
-        [field: SyncVar(hook = nameof(UpdatePlayerName))]
+        [field: SyncVar(hook = nameof(OnPlayerUpdateName))]
         public string PlayerName { get; private set; }
+        [field: SyncVar(hook = nameof(OnChangedReadyStatus))]
+        public bool IsReady { get; private set; }
 
         public static event Action OnPlayerClientUpdatedName;
+        public static event Action OnPlayerClientUpdatedReadyStatus;
+        public static event Action OnPlayerServerUpdateReadyStatus;
         
         /// <summary>
         /// Initializes the player network data.
@@ -39,18 +42,36 @@ namespace SPO.Player
         }
 
         public override void OnStartAuthority()
+        { 
+            SetPlayerName(SteamFriends.GetPersonaName());
+        }
+        
+        [Client]
+        public void SetReadyStatus(bool readyStatus)
         {
-            CmdSetPlayerName(SteamFriends.GetPersonaName().ToString());
+            CmdSetReadyStatus(readyStatus);
+        }
+
+        [Client]
+        public void SetPlayerName(string playerName)
+        { 
+            CmdSetPlayerName(playerName);
             gameObject.name = SPOConstants.LocalPlayerName;
+        }
+        
+        [Command]
+        private void CmdSetReadyStatus(bool readyStatus)
+        {
+            this.IsReady = readyStatus;
         }
         
         [Command]
         private void CmdSetPlayerName(string playerName)
         {
-            this.UpdatePlayerName(this.PlayerName, playerName);
+            this.OnPlayerUpdateName(this.PlayerName, playerName);
         }
 
-        private void UpdatePlayerName(string oldValue, string newValue)
+        private void OnPlayerUpdateName(string oldValue, string newValue)
         {
             if (isServer)
             {
@@ -60,6 +81,20 @@ namespace SPO.Player
             if (isClient)
             {
                 OnPlayerClientUpdatedName?.Invoke();
+            }
+        }
+
+        private void OnChangedReadyStatus(bool oldStatus, bool newStatus)
+        {
+            if (isServer)
+            {
+                this.IsReady = newStatus;
+                OnPlayerServerUpdateReadyStatus?.Invoke();
+            }
+            
+            if (isClient)
+            {
+                OnPlayerClientUpdatedReadyStatus?.Invoke();
             }
         }
     }

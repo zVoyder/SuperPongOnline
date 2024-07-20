@@ -8,7 +8,7 @@ namespace SPO.GameConstants
         public const string NetworkLobbyGameIDKey = "SPO_LobbyGameIDKey";
         public const string NetworkLobbyHostAddressKey = "SPO_AdressKey";
         public const string NetworkLobbyOwnerNameKey = "SPO_SteamPersonaNameKey";
-        public const string LocalPlayerName = "SPO_LocalPlayerName";
+        public const string LocalPlayerName = "SPO_LocalPlayer";
         
         #endregion
     }

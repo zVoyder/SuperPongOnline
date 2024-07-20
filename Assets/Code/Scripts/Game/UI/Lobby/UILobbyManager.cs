@@ -1,9 +1,10 @@
 namespace SPO.UI.Lobby
 {
-    using System;
-    using System.Collections.Generic;
     using System.Linq;
+    using System.Collections.Generic;
+    using Mirror;
     using UnityEngine;
+    using TMPro;
     using VUDK.Generic.Managers.Main.Interfaces.Casts;
     using VUDK.Generic.Managers.Main;
     using SPO.Player;
@@ -11,11 +12,18 @@ namespace SPO.UI.Lobby
 
     public class UILobbyManager : MonoBehaviour, ICastNetworkManager<SPONetworkManager>
     {
+        [Header("UI Settings")]
+        private string _defaultTimeText = "VS";
+        
+        [Header("UI Prefabs")]
+        [SerializeField]
+        private GameObject _playerTagPrefab;
+        
         [Header("UI Elements")]
         [SerializeField]
         private RectTransform _playerTagsPanel;
         [SerializeField]
-        private GameObject _playerTagPrefab;
+        private TMP_Text _lobbyTimeText;
 
         private bool _isPlayerTagCreated = false;
         private List<UIPlayerLobbyTag> _playerTags = new List<UIPlayerLobbyTag>();
@@ -24,18 +32,58 @@ namespace SPO.UI.Lobby
 
         private void OnEnable()
         {
+            SPONetSceneManager.OnRPCStartChangingScene += OnStartChangingScene;
+            SPONetSceneManager.OnRPCStopChangingScene += OnStopChangingScene;
+            SPONetSceneManager.OnRPCChangingSceneDelayUpdate += UpdateTimeLeftText;
+            SPONetworkManager.OnServerClientConnected += OnServerClientConnected;
+            SPONetworkManager.OnServerClientDisconnected += OnServerClientDisconnected;
             NetPlayerController.OnPlayerStartClient += UpdatePlayerTagsList;
-            NetPlayerController.OnPlayerStopClient += UpdatePlayerTagsList;
-            NetPlayerData.OnPlayerClientUpdatedName += UpdatePlayerTagsList;
+            NetPlayerController.OnPlayerStopClient += OnPlayerStopClient;
             NetPlayerController.OnPlayerStartAuthority += UpdatePlayerTagsList;
+            SPOSteamLobbyManager.OnLobbyUpdate += UpdatePlayerTagsList;
+            NetPlayerData.OnPlayerClientUpdatedReadyStatus += UpdatePlayerTagsList;
+            NetPlayerData.OnPlayerClientUpdatedName += UpdatePlayerTagsList;
         }
-        
+
         private void OnDisable()
         {
+            SPONetSceneManager.OnRPCStartChangingScene -= OnStartChangingScene;
+            SPONetSceneManager.OnRPCStopChangingScene -= OnStopChangingScene;
+            SPONetSceneManager.OnRPCChangingSceneDelayUpdate -= UpdateTimeLeftText;
+            SPONetworkManager.OnServerClientConnected -= OnServerClientConnected;
+            SPONetworkManager.OnServerClientDisconnected -= OnServerClientDisconnected;
             NetPlayerController.OnPlayerStartClient -= UpdatePlayerTagsList;
-            NetPlayerController.OnPlayerStopClient -= UpdatePlayerTagsList;
-            NetPlayerData.OnPlayerClientUpdatedName -= UpdatePlayerTagsList;
+            NetPlayerController.OnPlayerStopClient -= OnPlayerStopClient;
             NetPlayerController.OnPlayerStartAuthority -= UpdatePlayerTagsList;
+            SPOSteamLobbyManager.OnLobbyUpdate -= UpdatePlayerTagsList;
+            NetPlayerData.OnPlayerClientUpdatedReadyStatus -= UpdatePlayerTagsList;
+            NetPlayerData.OnPlayerClientUpdatedName -= UpdatePlayerTagsList;
+        }
+
+        private void OnServerClientConnected(NetworkConnectionToClient conn)
+        {
+            UpdatePlayerTagsList();
+        }
+        
+        private void OnServerClientDisconnected(NetworkConnectionToClient conn)
+        { 
+            UpdatePlayerTagsList();
+        }
+
+        private void OnPlayerStopClient()
+        {
+            UpdatePlayerTagsList();
+            SetDefaultTimeText();
+        }
+        
+        private void OnStopChangingScene()
+        {
+            SetDefaultTimeText();
+        }
+        
+        private void OnStartChangingScene(int delay)
+        { 
+            UpdateTimeLeftText(delay);
         }
 
         public void UpdatePlayerTagsList()
@@ -55,6 +103,8 @@ namespace SPO.UI.Lobby
         
         public void CreateHostPlayerTag()
         {
+            if (_playerTagPrefab == null) return;
+            
             foreach (NetPlayerController player in NetworkManager.NetPlayers)
             {
                 GameObject playerTag = Instantiate(_playerTagPrefab, _playerTagsPanel);
@@ -69,6 +119,8 @@ namespace SPO.UI.Lobby
         
         public void CreateClientPlayerTag()
         {
+            if (_playerTagPrefab == null) return;
+            
             foreach (NetPlayerController player in NetworkManager.NetPlayers)
             {
                 if (!_playerTags.Any(playerLobbyTag => playerLobbyTag.ConnectionID == player.NetData.ConnectionID))
@@ -99,6 +151,8 @@ namespace SPO.UI.Lobby
         
         public void RemovePlayerTag()
         {
+            Debug.Log("Removing unnecessary tags...");
+            
             List<UIPlayerLobbyTag> playerTagsToRemove = new List<UIPlayerLobbyTag>();
             
             foreach (UIPlayerLobbyTag playerTag in _playerTags)
@@ -117,6 +171,17 @@ namespace SPO.UI.Lobby
                     playerTagToRemove = null;
                 }
             }
+        }
+        
+        private void SetDefaultTimeText()
+        {
+            Debug.Log("Setting default time text...");
+            _lobbyTimeText.text = _defaultTimeText;
+        }
+        
+        private void UpdateTimeLeftText(int time)
+        {
+            _lobbyTimeText.text = time.ToString();
         }
     }
 }

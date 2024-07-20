@@ -16,6 +16,7 @@ namespace SPO.Managers.Networking
         protected Callback<LobbyEnter_t> LobbyEnter;
         protected Callback<GameLobbyJoinRequested_t> GameLobbyJoinRequested;
         protected Callback<LobbyMatchList_t> LobbyMatchList;
+        protected Callback<LobbyChatUpdate_t> LobbyChatUpdate;
 
         public static CSteamID LobbyID { get; private set; }
         public static CSteamID LobbyOwnerID => SteamMatchmaking.GetLobbyOwner(LobbyID);
@@ -24,6 +25,7 @@ namespace SPO.Managers.Networking
 
         public static event Action OnJoinedLobby;
         public static event Action OnLeftLobby;
+        public static event Action OnLobbyUpdate;
         
         private void OnEnable()
         {
@@ -33,13 +35,18 @@ namespace SPO.Managers.Networking
             LobbyEnter = Callback<LobbyEnter_t>.Create(OnLobbyEnter);
             GameLobbyJoinRequested = Callback<GameLobbyJoinRequested_t>.Create(OnGameLobbyJoinRequested);
             LobbyMatchList = Callback<LobbyMatchList_t>.Create(OnLobbyMatchList);
+            LobbyChatUpdate = Callback<LobbyChatUpdate_t>.Create(OnLobbyChatUpdate);
         }
 
         private void OnDisable()
         {
+            if (!SteamManager.Initialized) return;
+            
             LobbyCreated?.Dispose();
             LobbyEnter?.Dispose();
             GameLobbyJoinRequested?.Dispose();
+            LobbyMatchList?.Dispose();
+            LobbyChatUpdate?.Dispose();
         }
         
         public static List<CSteamID> GetAllPlayerIDsInLobby()
@@ -57,33 +64,29 @@ namespace SPO.Managers.Networking
             return playerIDs;
         }
         
-        public NetPlayerController GetLocalNetPlayer()
+        public static void FindLobbies()
         {
-            NetworkClient.localPlayer.TryGetComponent(out NetPlayerController localPlayer);
-            return localPlayer;
-            // GameObject.Find(SPOConstants.LocalPlayerName).TryGetComponent(out NetPlayerController localPlayer);
-            // return localPlayer;
-        }
-        
-        public void FindLobbies()
-        {
+            SteamMatchmaking.AddRequestLobbyListFilterSlotsAvailable(1); // No need to find full lobbies
+            SteamMatchmaking.AddRequestLobbyListStringFilter(SPOConstants.NetworkLobbyOwnerNameKey, LobbyOwnerPersonaName, ELobbyComparison.k_ELobbyComparisonNotEqual);
             SteamMatchmaking.AddRequestLobbyListStringFilter(SPOConstants.NetworkLobbyGameIDKey, SPOConstants.NetworkGameID, ELobbyComparison.k_ELobbyComparisonEqual);
             SteamMatchmaking.AddRequestLobbyListDistanceFilter(ELobbyDistanceFilter.k_ELobbyDistanceFilterWorldwide);
             SteamMatchmaking.AddRequestLobbyListResultCountFilter(10);
             SteamMatchmaking.RequestLobbyList();
         }
 
-        public void CreatePrivateLobby()
-        { 
-            SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypeFriendsOnly, NetworkManager.maxConnections);
-        }
-        
-        public void CreatePublicLobby()
+        public static void CreatePrivateLobby()
         {
-            SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypePublic, NetworkManager.maxConnections);
+            Debug.Log("Creating Private Lobby");
+            SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypeFriendsOnly, Mirror.NetworkManager.singleton.maxConnections);
         }
         
-        public void DisconnectFromLobby()
+        public static void CreatePublicLobby()
+        {
+            Debug.Log("Creating Public Lobby");
+            SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypePublic,  Mirror.NetworkManager.singleton.maxConnections);
+        }
+        
+        public static void DisconnectFromLobby()
         {
             SteamMatchmaking.LeaveLobby(LobbyID);
             SPONetworkManager.StopConnection();
@@ -103,7 +106,7 @@ namespace SPO.Managers.Networking
             {
                 // TODO: Just for testing purposes, join the first lobby found
                 string lobbyName = SteamMatchmaking.GetLobbyData(SteamMatchmaking.GetLobbyByIndex(0), SPOConstants.NetworkLobbyOwnerNameKey);
-                Debug.LogError("Lobbies Found! Joining first lobby found " + lobbyName);
+                Debug.Log("Lobbies Found! Joining first lobby found " + lobbyName);
                 SteamMatchmaking.JoinLobby(SteamMatchmaking.GetLobbyByIndex(0));
             }
             else
@@ -116,7 +119,7 @@ namespace SPO.Managers.Networking
         {
             if (callback.m_eResult != EResult.k_EResultOK)
             {
-                Debug.LogError("Failed to create Steam Lobby!");
+                Debug.LogWarning("Failed to create Steam Lobby!");
                 return;
             }
             
@@ -124,9 +127,9 @@ namespace SPO.Managers.Networking
             SteamMatchmaking.SetLobbyData(LobbyID, SPOConstants.NetworkLobbyGameIDKey, SPOConstants.NetworkGameID);
             SteamMatchmaking.SetLobbyData(LobbyID, SPOConstants.NetworkLobbyHostAddressKey, SteamUser.GetSteamID().ToString());
             SteamMatchmaking.SetLobbyData(LobbyID, SPOConstants.NetworkLobbyOwnerNameKey, LobbyOwnerPersonaName);
-            Mirror.NetworkManager.singleton.StartHost();
+            SPONetworkManager.StartHostConnection();
             
-            Debug.Log($"Created Lobby by {LobbyOwnerPersonaName} with ID {LobbyID}");
+            Debug.Log($"Created Lobby by {LobbyOwnerPersonaName} with result {callback.m_eResult}");
             OnJoinedLobby?.Invoke();
         }
         
@@ -144,18 +147,23 @@ namespace SPO.Managers.Networking
             SetLobbyID(new CSteamID(callback.m_ulSteamIDLobby));
             string hostAddress = SteamMatchmaking.GetLobbyData(LobbyID, SPOConstants.NetworkLobbyHostAddressKey); 
             NetworkManager.networkAddress = hostAddress;
-            Mirror.NetworkManager.singleton.StartClient();
+            SPONetworkManager.StartClientConnection();
             Debug.Log($"Joined Lobby");
             OnJoinedLobby?.Invoke();
         }
         
         private void OnGameLobbyJoinRequested(GameLobbyJoinRequested_t callback)
         {
-            NetworkManager.StartClient();
+            // SPONetworkManager.StartClientConnection();
             SteamMatchmaking.JoinLobby(callback.m_steamIDLobby);
             OnJoinedLobby?.Invoke();
         }
-        
+
+        private void OnLobbyChatUpdate(LobbyChatUpdate_t callback)
+        {
+            OnLobbyUpdate?.Invoke();
+        }
+
         private void SetLobbyID(CSteamID steamID)
         {
             LobbyID = steamID;

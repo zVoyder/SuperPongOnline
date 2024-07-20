@@ -6,20 +6,28 @@ namespace SPO.UI.Lobby
     using TMPro;
     using SPO.Utility;
     using SPO.Player;
-    
+    using UnityEngine.Serialization;
+
     public class UIPlayerLobbyTag : MonoBehaviour
     {
+        [Header("Ready Box")]
+        [SerializeField]
+        private Image _readyImage;
+        [SerializeField]
+        private Sprite _readyOnSprite;
+        [SerializeField]
+        private Sprite _readyOffSprite;
+        
         [Header("UI Elements")]
         [SerializeField]
         private RawImage _imageAvatar;
         [SerializeField]
         private TMP_Text _textPlayerName;
-     
-        private string _playerName;
-        private ulong _playerSteamID;
-        private bool _isAvatarReceived;
         
-        public int ConnectionID { get; private set; }
+        private bool _isAvatarReceived;
+        private NetPlayerData _relatedNetPlayerData;
+        
+        public int ConnectionID => _relatedNetPlayerData.ConnectionID;
         protected Callback<AvatarImageLoaded_t> AvatarImageLoaded;
 
         private void OnEnable()
@@ -34,30 +42,34 @@ namespace SPO.UI.Lobby
 
         public void Init(NetPlayerData netData)
         {
-            ConnectionID = netData.ConnectionID;
-            _playerSteamID = netData.PlayerSteamID;
-            _playerName = netData.PlayerName;
+            _relatedNetPlayerData = netData;
         }
         
         public void SetPlayerValues()
         {
-            _textPlayerName.text = _playerName;
+            _textPlayerName.text = _relatedNetPlayerData.PlayerName;
+            UpdateReadyBox(_relatedNetPlayerData.IsReady);
             if (!_isAvatarReceived) UpdatePlayerAvatarImage();
         }
-
+        
         private void OnAvatarImageLoaded(AvatarImageLoaded_t callback)
         {
-            if (callback.m_steamID.m_SteamID != _playerSteamID) return;
+            if (callback.m_steamID.m_SteamID != _relatedNetPlayerData.PlayerSteamID) return;
             _imageAvatar.texture = SPOSteamUtils.GetSteamAvatar(callback.m_iImage);
             _isAvatarReceived = true;
         }
         
         private void UpdatePlayerAvatarImage()
         {
-            CSteamID steamID = (CSteamID)_playerSteamID;
+            CSteamID steamID = (CSteamID)_relatedNetPlayerData.PlayerSteamID;
             int imageId = SteamFriends.GetLargeFriendAvatar(steamID);
             if (imageId == -1) return;
             _imageAvatar.texture = SPOSteamUtils.GetSteamAvatar(imageId);
+        }
+        
+        private void UpdateReadyBox(bool isReady)
+        {
+            _readyImage.sprite = isReady ? _readyOnSprite : _readyOffSprite;
         }
     }
 }

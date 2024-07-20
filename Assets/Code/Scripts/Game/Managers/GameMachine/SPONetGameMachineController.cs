@@ -9,7 +9,6 @@ namespace SPO.Managers.GameMachine
     using SPO.Managers.GameMachine.Data;
     using SPO.Managers.GameStats;
 
-    [RequireComponent(typeof(SPOGameMachine))]
     [RequireComponent(typeof(NetworkIdentity))]
     public class SPONetGameMachineController : NetworkBehaviour, IInit<SPOGameMachine>, ICastGameStats<SPOGameStats>, ICastGameManager<SPOGameManager>
     {

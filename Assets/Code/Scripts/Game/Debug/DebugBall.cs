@@ -1,6 +1,6 @@
+#if UNITY_EDITOR
 namespace SPO.Debug
 {
-#if UNITY_EDITOR
     using UnityEngine;
     using Mirror;
     using SPO.Level.Ball;
@@ -24,5 +24,5 @@ namespace SPO.Debug
             GUILayout.EndArea();
         }
     }
-#endif
 }
+#endif

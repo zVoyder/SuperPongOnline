@@ -18,6 +18,11 @@ namespace SPO.Managers.GameMachine
         
         public SPOGameManager GameManager => MainManager.Ins.GameManager as SPOGameManager;
 
+        private void Awake()
+        {
+            Init();
+        }
+        
         public override void Init()
         {
             base.Init();

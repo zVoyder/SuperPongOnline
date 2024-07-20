@@ -33,6 +33,7 @@ namespace SPO.Managers.Networking
         public static event Action<NetworkConnectionToClient> OnServerClientDisconnected;
         public static event Action OnServerStarted;
         public static event Action OnServerStopped;
+        public static event Action<string> OnServerChangedScene;
 
         public override void Awake()
         {
@@ -42,13 +43,19 @@ namespace SPO.Managers.Networking
             transport = _fizzySteamworks;
         }
 
+        private void OnEnable()
+        {
+            NetPlayerData.OnPlayerServerUpdateReadyStatus += OnPlayerReadyStatusUpdate;
+        }
+
+        private void OnDisable()
+        {
+            NetPlayerData.OnPlayerServerUpdateReadyStatus -= OnPlayerReadyStatusUpdate;
+        }
+
         public override void OnServerAddPlayer(NetworkConnectionToClient conn)
         {
-            if (!SceneManager.NetSceneManager.IsLobbyScene())
-            {
-                Debug.LogWarning("A Player has tried to join the server from a scene that is not the lobby!");
-                return;
-            }
+            if (IsServerFull()) return;
             
             Debug.Log($"Player {conn.connectionId} has been added to the server!");
             ConnectedPlayerEventArgs eventArgs = new ConnectedPlayerEventArgs(conn, numPlayers);
@@ -62,8 +69,10 @@ namespace SPO.Managers.Networking
             
             CSteamID lobbyID = SPOSteamLobbyManager.LobbyID;
             ulong playerSteamId = (ulong)SteamMatchmaking.GetLobbyMemberByIndex(lobbyID, NetPlayers.Count);
-            
             netPlayer.Init(eventArgs.Connection.connectionId, NetPlayers.Count + 1, playerSteamId);
+            
+            // NetPlayers.Add() and NetPlayers.Remove()
+            // are called in the OnStartClient and OnStopClient methods respectively
             // NetPlayers.Add(netPlayer);
             
             NetworkServer.AddPlayerForConnection(eventArgs.Connection, goPlayer);
@@ -72,22 +81,25 @@ namespace SPO.Managers.Networking
 
         public override void OnServerConnect(NetworkConnectionToClient conn)
         {
-            Debug.Log($"Client {conn.connectionId} has connected to the server");
+            Debug.Log($"<color=green>Client {conn.connectionId} has connected to the server</color>");
             OnServerClientConnected?.Invoke(conn);
         }
 
         public override void OnServerDisconnect(NetworkConnectionToClient conn)
         {
             base.OnServerDisconnect(conn);
-            Debug.Log($"Client {conn.connectionId} has disconnected from the server");
+            Debug.Log($"<color=green>Client {conn.connectionId} has disconnected from the server</color>");
             OnServerClientDisconnected?.Invoke(conn);
+            
+            if (SceneManager.NetSceneManager.IsGameScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path))
+                StopConnection(); // Stop connection if a player disconnects during the game
         }
 
         public override void OnStartServer()
         {
             base.OnStartServer();
             OnServerStarted?.Invoke();
-            Debug.Log("<color=green>Server has started</color>");
+            Debug.Log("<color=yellow>Server has started</color>");
         }
 
         public override void OnStopServer()
@@ -96,42 +108,105 @@ namespace SPO.Managers.Networking
             OnServerStopped?.Invoke();
             Debug.Log("<color=red>Server has stopped</color>");
         }
-
+        
+        public bool ArePlayersReady()
+        {
+            // if (!IsServerFull()) return false; // Uncomment this line if you want to check if all players are ready only when the server is full
+            Debug.Log("Checking if all players are ready...");
+            Debug.Log("Number of players ready: " + NetPlayers.Count(player => player.NetData.IsReady));
+            return NetPlayers.All(player => player.NetData.IsReady);
+        }
+        
+        public bool IsServerFull()
+        { 
+            bool isFull = numPlayers >= maxConnections;
+            return isFull;
+        }
+        
+        public bool IsServerEmpty()
+        {
+            bool isEmpty = numPlayers <= 0;
+            Debug.Log("Checking if server is empty: " + isEmpty);
+            return isEmpty;
+        }
+        
+        public static void StartClientConnection()
+        {
+            if (NetworkClient.isConnected) return;
+            NetworkManager.singleton.StartClient();
+        }
+        
+        public static void StartHostConnection()
+        {
+            if (NetworkServer.active && NetworkClient.isConnected) return;
+            NetworkManager.singleton.StartHost();
+        }
+        
+        public static void StartServerConnection()
+        {
+            if (NetworkServer.active) return;
+            NetworkManager.singleton.StartServer();
+        }
+        
         public static void StopConnection()
         {
             // stop host if host mode
             if (NetworkServer.active && NetworkClient.isConnected)
             {
+                Debug.Log("Requesting stop connection by host");
                 NetworkManager.singleton.StopHost();
             }
             // stop client if client-only
             else if (NetworkClient.isConnected)
             {
+                Debug.Log("Requesting stop connection by client");
                 NetworkManager.singleton.StopClient();
             }
             // stop server if server-only
             else if (NetworkServer.active)
             {
+                Debug.Log("Requesting stop connection by server");
                 NetworkManager.singleton.StopServer();
             }
         }
-
+        
+        public override void OnServerSceneChanged(string sceneName)
+        {
+            base.OnServerSceneChanged(sceneName);
+            OnServerChangedScene?.Invoke(sceneName);
+        }
+        
+        public static NetPlayerController GetLocalNetPlayer()
+        {
+            NetworkClient.localPlayer.TryGetComponent(out NetPlayerController localPlayer);
+            return localPlayer;
+        }
+        
         public static int GetRandomConnectionID()
         {
             if (NetworkServer.connections.Count <= 0) return -1;
 
             return NetworkServer.connections.ElementAt(UnityEngine.Random.Range(0, NetworkServer.connections.Count)).Key;
         }
-
-        // TODO: Add method for spawn player brackets when on game scene,
-        // an idea could be to use the NetPlayerController to spawn the playerManager
-        // private void SpawnPlayer(NetworkConnectionToClient conn, Vector3 spawnPoint)
-        // {
-        //     GameObject goPlayer = Instantiate(playerPrefab, spawnPoint, Quaternion.identity);
-        //     NetworkServer.AddPlayerForConnection(conn, goPlayer);
-        //
-        //     if (goPlayer.TryGetComponent(out INetPlayer player))
-        //         player.AssignNetPlayer(conn);
-        // }
+        
+        private void OnPlayerReadyStatusUpdate()
+        {
+            if (ArePlayersReady())
+                LobbyReady();
+            else
+                LobbyUnready();
+        }
+        
+        private void LobbyReady()
+        {
+            Debug.Log("All players are ready!");
+            SceneManager.NetSceneManager.ChangeSceneToGame();
+        }
+        
+        private void LobbyUnready()
+        {
+            Debug.Log("Not all players are ready!");
+            SceneManager.NetSceneManager.StopChangingScene();
+        }
     }
 }
