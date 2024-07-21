@@ -5,6 +5,7 @@ namespace SPO.Player
     using Steamworks;
     using VUDK.Patterns.Initialization.Interfaces;
     using SPO.GameConstants;
+    using UnityEngine;
 
     public class NetPlayerData : NetworkBehaviour, IInit<int, int, ulong>
     {
@@ -17,11 +18,11 @@ namespace SPO.Player
         [field: SyncVar(hook = nameof(OnPlayerUpdateName))]
         public string PlayerName { get; private set; }
         [field: SyncVar(hook = nameof(OnChangedReadyStatus))]
-        public bool IsReady { get; private set; }
+        public bool IsPlayerReady { get; private set; }
 
-        public static event Action OnPlayerClientUpdatedName;
-        public static event Action OnPlayerClientUpdatedReadyStatus;
-        public static event Action OnPlayerServerUpdateReadyStatus;
+        public static event Action OnClientPlayerUpdatedName;
+        public static event Action OnClientPlayerUpdatedReadyStatus;
+        public static event Action OnServerPlayerUpdateReadyStatus;
         
         /// <summary>
         /// Initializes the player network data.
@@ -47,55 +48,55 @@ namespace SPO.Player
         }
         
         [Client]
-        public void SetReadyStatus(bool readyStatus)
-        {
-            CmdSetReadyStatus(readyStatus);
-        }
-
-        [Client]
         public void SetPlayerName(string playerName)
         { 
             CmdSetPlayerName(playerName);
             gameObject.name = SPOConstants.LocalPlayerName;
         }
         
-        [Command]
-        private void CmdSetReadyStatus(bool readyStatus)
+        [ContextMenu("Set Ready Status")]
+        private void SetReadyStatus()
         {
-            this.IsReady = readyStatus;
+            CmdSetReadyStatus(!IsPlayerReady);
         }
         
+        [Client]
+        public void SetReadyStatus(bool readyStatus)
+        {
+            CmdSetReadyStatus(readyStatus);
+        }
+
         [Command]
         private void CmdSetPlayerName(string playerName)
         {
             this.OnPlayerUpdateName(this.PlayerName, playerName);
         }
-
+        
+        [Command]
+        private void CmdSetReadyStatus(bool readyStatus)
+        {
+            this.IsPlayerReady = readyStatus;
+        }
+        
         private void OnPlayerUpdateName(string oldValue, string newValue)
         {
             if (isServer)
-            {
                 this.PlayerName = newValue;
-            }
 
             if (isClient)
-            {
-                OnPlayerClientUpdatedName?.Invoke();
-            }
+                OnClientPlayerUpdatedName?.Invoke();
         }
 
         private void OnChangedReadyStatus(bool oldStatus, bool newStatus)
         {
             if (isServer)
             {
-                this.IsReady = newStatus;
-                OnPlayerServerUpdateReadyStatus?.Invoke();
+                this.IsPlayerReady = newStatus;
+                OnServerPlayerUpdateReadyStatus?.Invoke();
             }
             
             if (isClient)
-            {
-                OnPlayerClientUpdatedReadyStatus?.Invoke();
-            }
+                OnClientPlayerUpdatedReadyStatus?.Invoke();
         }
     }
 }

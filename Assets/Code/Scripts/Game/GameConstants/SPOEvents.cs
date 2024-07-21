@@ -7,8 +7,6 @@ namespace SPO.GameConstants
     {
         // Game Events
         public const string OnGoalScored = "OnGoalScored";
-        public const string OnGameReset = "OnGameReset";
-        public const string OnGameOver = "OnGameOver";
     }
 
     /// <summary>

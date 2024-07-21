@@ -1,4 +1,4 @@
-namespace SPO.UI.MainMenu
+namespace SPO.UI
 {
     using UnityEngine;
     using SPO.Player;
@@ -22,16 +22,27 @@ namespace SPO.UI.MainMenu
             SPOSteamLobbyManager.CreatePublicLobby();
         }
         
-        public void ReadyToggleButton()
+        public void InviteFriendsButton()
         {
-            NetPlayerData localNetData = SPONetworkManager.GetLocalNetPlayer().NetData;
-            bool isReady = localNetData.IsReady;
-            SPONetworkManager.GetLocalNetPlayer().NetData.SetReadyStatus(!isReady);
+            SPOSteamLobbyManager.OpenInviteOverlay();
         }
         
         public void LeaveLobbyButton()
         {
             SPOSteamLobbyManager.DisconnectFromLobby();
+        }
+        
+        public void ReadyToggleButton()
+        {
+            NetPlayerData localNetData = SPONetworkManager.GetLocalNetPlayer().NetData;
+            bool isReady = localNetData.IsPlayerReady;
+            localNetData.SetReadyStatus(!isReady);
+        }
+        
+        public void SetReadyStatusButton(bool readyStatus)
+        {
+            NetPlayerData localNetData = SPONetworkManager.GetLocalNetPlayer().NetData;
+            localNetData.SetReadyStatus(readyStatus);
         }
     }
 }

@@ -18,6 +18,15 @@ namespace SPO.Managers.GameMachine
         
         public SPOGameManager GameManager => MainManager.Ins.GameManager as SPOGameManager;
         public SPOGameStats GameStats => MainManager.Ins.GameStats as SPOGameStats;
+
+        public static event Action OnServerGameIdle;
+        public static event Action OnServerGameBegin;
+        public static event Action OnServerGamePlaying;
+        public static event Action OnServerGameEnd;
+        public static event Action OnClientGameIdle;
+        public static event Action OnClientGameBegin;
+        public static event Action OnClientGamePlaying;
+        public static event Action OnClientGameEnd;
         
         public Action<int> OnWinnerIDChangedHookReceived;
         
@@ -36,6 +45,7 @@ namespace SPO.Managers.GameMachine
         [Server]
         public void ServerGameIdle()
         {
+            OnServerGameIdle?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GameIdle);
             RpcGameIdle();
         }
@@ -43,6 +53,7 @@ namespace SPO.Managers.GameMachine
         [Server]
         public void ServerGameBegin()
         {
+            OnServerGameBegin?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GameBegin);
             RpcGameBegin();
         }
@@ -50,6 +61,7 @@ namespace SPO.Managers.GameMachine
         [Server]
         public void ServerGamePlaying()
         {
+            OnServerGamePlaying?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GamePlaying);
             RpcGamePlaying();
         }
@@ -57,32 +69,37 @@ namespace SPO.Managers.GameMachine
         [Server]
         public void ServerGameEndWinner(int winnerID)
         {
+            OnServerGameEnd?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GameEnd);
             RpcGameEnd();
-            SetWinner(winnerID);
+            SetWinner(winnerID); // Change the winner after because the sync var hook will be called in game end state
         }
 
         [ClientRpc]
         public void RpcGameIdle()
         {
+            OnClientGameIdle?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GameIdle);
         }
 
         [ClientRpc]
         public void RpcGameBegin()
         {
+            OnClientGameBegin?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GameBegin);
         }
 
         [ClientRpc]
         public void RpcGamePlaying()
         {
+            OnClientGamePlaying?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GamePlaying);
         }
         
         [ClientRpc]
         public void RpcGameEnd()
         {
+            OnClientGameEnd?.Invoke();
             _gameMachine.ChangeState(GameStateKeys.GameEnd);
         }
         

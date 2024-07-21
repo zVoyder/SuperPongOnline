@@ -1,47 +1,58 @@
 namespace SPO.Managers.Networking
 {
+    using System;
     using Mirror;
     using UnityEngine;
     using SPO.Player;
-    using SPO.GameConstants;
-    using VUDK.Features.Main.EventSystem;
 
     public class SPONetGameoverManager : NetworkBehaviour
     {
+        public static event Action OnPlayerClientWin;
+        public static event Action OnPlayerClientLose;
+        public static event Action<int> OnServerGameover;
+        public static event Action<int, bool> OnClientGameover;
+        public static event Action OnServerResetGame;
+        public static event Action OnClientResetGame;
+        
         [Server]
         public void ServerGameOver(int winnerID)
         {
-            EventManager.Ins.TriggerEvent(SPOServerEvents.OnGameOver, winnerID);
+            OnServerGameover?.Invoke(winnerID);
             RpcGameOver(winnerID);
         }
 
         [ClientRpc]
         public void RpcGameOver(int winnerID)
         {
+            
             if (winnerID == NetPlayerController.GetLocalPlayerID())
             {
-                Camera.main.backgroundColor = Color.green; // TODO: Just for testing purposes
                 Debug.Log("You win!");
+                OnPlayerClientWin?.Invoke();
+                OnClientGameover?.Invoke(winnerID, true);
+                Camera.main.backgroundColor = Color.green;
             }
             else
             {
-                Camera.main.backgroundColor = Color.red; // TODO: Just for testing purposes
                 Debug.Log("You lose!");
+                OnPlayerClientLose?.Invoke();
+                OnClientGameover?.Invoke(winnerID, false);
+                Camera.main.backgroundColor = Color.red;
             }
         }
 
         [Server]
         public void ServerResetGame()
         {
-            EventManager.Ins.TriggerEvent(SPOServerEvents.OnGameReset);
-            
+            OnServerResetGame?.Invoke();
             RpcResetGame();
         }
 
         [ClientRpc]
         public void RpcResetGame()
         {
-            Camera.main.backgroundColor = Color.black; // TODO: Just for testing purposes
+            OnClientResetGame?.Invoke();
+            Camera.main.backgroundColor = Color.black;
         }
     }
 }

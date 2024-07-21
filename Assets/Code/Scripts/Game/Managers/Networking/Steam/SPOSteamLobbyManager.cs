@@ -70,6 +70,11 @@ namespace SPO.Managers.Networking.Steam
             SPONetworkManager.StopConnection();
             OnSteamLobbyLeft?.Invoke(LobbyID);
         }
+        
+        public static void OpenInviteOverlay()
+        { 
+            SteamFriends.ActivateGameOverlayInviteDialog(LobbyID);
+        }
 
         private static void OnLobbyCreated(LobbyCreated_t callback)
         {

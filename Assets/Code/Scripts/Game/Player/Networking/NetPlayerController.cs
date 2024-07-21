@@ -1,6 +1,7 @@
 namespace SPO.Player
 {
     using System;
+    using Managers.GameMachine;
     using UnityEngine;
     using UnityEngine.Serialization;
     using Mirror;
@@ -35,6 +36,16 @@ namespace SPO.Player
             TryGetComponent(out _networkIdentity);
             TryGetComponent(out NetPlayerData netData);
             NetData = netData;
+        }
+
+        private void OnEnable()
+        {
+            SPONetGameMachineController.OnClientGameBegin += OnClientGameBegin;
+        }
+
+        private void OnDisable()
+        {
+            SPONetGameMachineController.OnClientGameBegin -= OnClientGameBegin;
         }
 
         public void Init(int connectionID, int playerIdNumber, ulong playerSteamId)
@@ -99,6 +110,16 @@ namespace SPO.Player
                 return netPlayer.NetData.ConnectionID;
 
             return -1;
+        }
+        
+        private void OnClientGameBegin()
+        {
+            OnResetStatus();
+        }
+        
+        private void OnResetStatus()
+        {
+            NetData.SetReadyStatus(false);
         }
     }
 }

@@ -34,7 +34,19 @@ namespace SPO.Managers.Networking
         {
             _delayTask = new DelayTask();
         }
+
+        private void OnEnable()
+        {
+            SPONetworkManager.OnLobbyPlayersReady += ChangeSceneToGame;
+            SPONetworkManager.OnLobbyPlayersUnready += StopChangingScene;
+        }
         
+        private void OnDisable()
+        {
+            SPONetworkManager.OnLobbyPlayersReady -= ChangeSceneToGame;
+            SPONetworkManager.OnLobbyPlayersUnready -= StopChangingScene;
+        }
+
         [ServerCallback]
         private void Update()
         {

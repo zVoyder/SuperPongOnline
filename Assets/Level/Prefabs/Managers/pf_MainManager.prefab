@@ -235,6 +235,52 @@ MonoBehaviour:
   _pooledObject: {fileID: 7936101778875590380, guid: f9ce63abc2464d548a505da6b1d962ad, type: 3}
   _instancesAtStart: 1
   _isCapped: 1
+--- !u!1 &2491642446808010034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2228345479130792135}
+  - component: {fileID: 3898434975145730426}
+  m_Layer: 0
+  m_Name: UIRematchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2228345479130792135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2491642446808010034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1731170398150407377}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3898434975145730426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2491642446808010034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bdb10a909545c38a405d95be9dd744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rematchPanel: {fileID: 0}
+  _rematchCountText: {fileID: 0}
 --- !u!1 &2791194827473471885
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _menuPanel: {fileID: 0}
   _lobbyPanel: {fileID: 0}
+  _matchmakingPanel: {fileID: 0}
 --- !u!1 &3527432506624682535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1206,7 @@ Transform:
   m_Children:
   - {fileID: 8849599843801455188}
   - {fileID: 4270125141310660058}
+  - {fileID: 2228345479130792135}
   m_Father: {fileID: 8191499298834866033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3940914740790788335

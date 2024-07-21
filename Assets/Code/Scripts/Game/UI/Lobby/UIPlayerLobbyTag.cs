@@ -48,7 +48,7 @@ namespace SPO.UI.Lobby
         public void SetPlayerValues()
         {
             _textPlayerName.text = _relatedNetPlayerData.PlayerName;
-            UpdateReadyBox(_relatedNetPlayerData.IsReady);
+            UpdateReadyBox(_relatedNetPlayerData.IsPlayerReady);
             if (!_isAvatarReceived) UpdatePlayerAvatarImage();
         }
         

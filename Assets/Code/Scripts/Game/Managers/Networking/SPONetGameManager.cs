@@ -28,12 +28,14 @@ namespace SPO.Managers.Networking
         {
             SPONetworkManager.OnServerClientDisconnected += OnServerClientDisconnected;
             SPONetworkManager.OnServerChangedScene += OnServerChangedScene;
+            NetPlayerData.OnServerPlayerUpdateReadyStatus += OnServerPlayerUpdateReadyStatus;
         }
 
         private void OnDisable()
         {
             SPONetworkManager.OnServerClientDisconnected -= OnServerClientDisconnected;
             SPONetworkManager.OnServerChangedScene -= OnServerChangedScene;
+            NetPlayerData.OnServerPlayerUpdateReadyStatus -= OnServerPlayerUpdateReadyStatus;
         }
 
         private void OnServerClientDisconnected(NetworkConnectionToClient conn)
@@ -44,13 +46,16 @@ namespace SPO.Managers.Networking
         private void OnServerChangedScene(string scenePath)
         {
             if (SceneManager.NetSceneManager.IsGameScene(scenePath))
+            {
+                SpawnPlayerRackets(); // Do it only when once the game scene is loaded
                 StartGame();
+            }
         }
         
         [Server]
         public void StartGame()
         {
-            SpawnPlayerRackets();
+            // The reset status of each player client is done in the NetPlayerController when the game begins
             GameManager.GameMachine.NetMachineController.ServerGameBegin();
         }
         
@@ -91,6 +96,23 @@ namespace SPO.Managers.Networking
 
             SpawnedBall.Dispose();
             SpawnedBall = null;
+        }
+        
+        private void OnServerPlayerUpdateReadyStatus()
+        {
+            if (!AreAllPlayersReadyForRematch()) return;
+            
+            StartGame();
+        }
+        
+        private bool AreAllPlayersReadyForRematch()
+        {
+            if (!NetworkManager.SceneManager.NetSceneManager.IsCurrentSceneGame()) return false;
+            
+            foreach (NetPlayerController netPlayer in NetworkManager.NetPlayers)
+                if (!netPlayer.NetData.IsPlayerReady) return false;
+
+            return true;
         }
     }
 }

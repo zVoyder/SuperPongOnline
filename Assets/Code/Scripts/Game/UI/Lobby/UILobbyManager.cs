@@ -36,34 +36,33 @@ namespace SPO.UI.Lobby
             SPONetSceneManager.OnRPCStartChangingScene += OnStartChangingScene;
             SPONetSceneManager.OnRPCStopChangingScene += OnStopChangingScene;
             SPONetSceneManager.OnRPCChangingSceneDelayUpdate += UpdateTimeLeftText;
-            NetPlayerController.OnPlayerStartAuthority += UpdatePlayerTagsList;
-            // NetPlayerController.OnPlayerStartClient += UpdatePlayerTagsList;
+            NetPlayerController.OnPlayerStartAuthority += UpdateClientPlayerTagsList;
             SPONetworkManager.OnServerClientDisconnected += OnServerClientDisconnected; // when a player disconnects from the server, update the server
-            SPONetworkManager.OnClientDisconnected += UpdatePlayerTagsList; // when a player stops client, update his client
-            NetPlayerData.OnPlayerClientUpdatedReadyStatus += UpdatePlayerTagsList;
-            NetPlayerData.OnPlayerClientUpdatedName += UpdatePlayerTagsList; // if some player changes their name while in lobby
+            SPONetworkManager.OnClientDisconnected += UpdateClientPlayerTagsList; // when a player stops client, update his client
+            NetPlayerData.OnClientPlayerUpdatedReadyStatus += UpdateClientPlayerTagsList;
+            NetPlayerData.OnClientPlayerUpdatedName += UpdateClientPlayerTagsList; // if some player changes their name while in lobby
         }
+        
         private void OnDisable()
         {
             SPONetSceneManager.OnRPCStartChangingScene -= OnStartChangingScene;
             SPONetSceneManager.OnRPCStopChangingScene -= OnStopChangingScene;
             SPONetSceneManager.OnRPCChangingSceneDelayUpdate -= UpdateTimeLeftText;
-            NetPlayerController.OnPlayerStartAuthority -= UpdatePlayerTagsList;
-            // NetPlayerController.OnPlayerStartClient -= UpdatePlayerTagsList;
+            NetPlayerController.OnPlayerStartAuthority -= UpdateClientPlayerTagsList;
             SPONetworkManager.OnServerClientDisconnected -= OnServerClientDisconnected;
-            SPONetworkManager.OnClientDisconnected -= UpdatePlayerTagsList;
-            NetPlayerData.OnPlayerClientUpdatedReadyStatus -= UpdatePlayerTagsList;
-            NetPlayerData.OnPlayerClientUpdatedName -= UpdatePlayerTagsList;
+            SPONetworkManager.OnClientDisconnected -= UpdateClientPlayerTagsList;
+            NetPlayerData.OnClientPlayerUpdatedReadyStatus -= UpdateClientPlayerTagsList;
+            NetPlayerData.OnClientPlayerUpdatedName -= UpdateClientPlayerTagsList;
         }
         
         private void OnServerClientConnected(NetworkConnectionToClient conn)
         {
-            UpdatePlayerTagsList();
+            UpdateClientPlayerTagsList();
         }
         
         private void OnServerClientDisconnected(NetworkConnectionToClient conn)
         { 
-            UpdatePlayerTagsList();
+            UpdateClientPlayerTagsList();
             SetDefaultTimeText();
         }
         
@@ -77,7 +76,7 @@ namespace SPO.UI.Lobby
             SetDefaultTimeText(); // When stopping changing scene, set the default time text
         }
 
-        public void UpdatePlayerTagsList()
+        public void UpdateClientPlayerTagsList()
         {
             if (!_isPlayerTagCreated) 
                 CreateHostPlayerTag();

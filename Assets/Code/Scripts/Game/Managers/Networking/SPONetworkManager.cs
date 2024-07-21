@@ -36,6 +36,8 @@ namespace SPO.Managers.Networking
         public static event Action OnServerStarted;
         public static event Action OnServerStopped;
         public static event Action<string> OnServerChangedScene;
+        public static event Action OnLobbyPlayersReady;
+        public static event Action OnLobbyPlayersUnready;
 
         public override void Awake()
         {
@@ -48,13 +50,13 @@ namespace SPO.Managers.Networking
         private void OnEnable()
         {
             NetPlayerController.OnServerPlayerDisconnected += OnServerPlayerDisconnected;
-            NetPlayerData.OnPlayerServerUpdateReadyStatus += OnPlayerReadyStatusUpdate;
+            NetPlayerData.OnServerPlayerUpdateReadyStatus += OnServerPlayerReadyStatusUpdate;
         }
 
         private void OnDisable()
         {
             NetPlayerController.OnServerPlayerDisconnected -= OnServerPlayerDisconnected;
-            NetPlayerData.OnPlayerServerUpdateReadyStatus -= OnPlayerReadyStatusUpdate;
+            NetPlayerData.OnServerPlayerUpdateReadyStatus -= OnServerPlayerReadyStatusUpdate;
         }
 
         public override void OnServerAddPlayer(NetworkConnectionToClient conn)
@@ -114,12 +116,9 @@ namespace SPO.Managers.Networking
             Debug.Log("<color=red>Server has stopped</color>");
         }
         
-        public bool ArePlayersReady()
+        public int GetReadyPlayerCount()
         {
-            if (!IsServerFull()) return false;
-            Debug.Log("Checking if all players are ready...");
-            Debug.Log("Number of players ready: " + NetPlayers.Count(player => player.NetData.IsReady));
-            return NetPlayers.All(player => player.NetData.IsReady);
+            return NetPlayers.Count(player => player.NetData.IsPlayerReady);
         }
         
         public bool IsServerFull()
@@ -216,30 +215,45 @@ namespace SPO.Managers.Networking
         private void OnServerPlayerDisconnected()
         {
             if (IsServerEmpty()) return; // Do it if server is empty
-            
             // Do it if we are in the game scene
             if (SceneManager.NetSceneManager.IsCurrentSceneGame()) 
                 StopConnection();
         }
         
-        private void OnPlayerReadyStatusUpdate()
-        {
-            if (ArePlayersReady())
-                OnPlayersReady();
-            else
-                OnPlayersUnready();
+        private void OnServerPlayerReadyStatusUpdate()
+        { 
+            CheckLobby();
         }
         
-        private void OnPlayersReady()
+        [Server]
+        private void CheckLobby()
+        {
+            if (!SceneManager.NetSceneManager.IsCurrentSceneLobby()) return;
+            
+            if (ArePlayersLobbyReady())
+                OnLobbyReady();
+            else
+                OnLobbyUnready();
+        }
+        
+        private bool ArePlayersLobbyReady()
+        {
+            if (!IsServerFull()) return false;
+            Debug.Log("Checking if all players are ready...");
+            Debug.Log("Number of players ready: " + NetPlayers.Count(player => player.NetData.IsPlayerReady));
+            return NetPlayers.All(player => player.NetData.IsPlayerReady);
+        }
+
+        private void OnLobbyReady()
         {
             Debug.Log("All players are ready!");
-            SceneManager.NetSceneManager.ChangeSceneToGame();
+            OnLobbyPlayersReady?.Invoke();
         }
         
-        private void OnPlayersUnready()
+        private void OnLobbyUnready()
         {
             Debug.Log("Not all players are ready!");
-            SceneManager.NetSceneManager.StopChangingScene();
+            OnLobbyPlayersUnready?.Invoke();
         }
     }
 }

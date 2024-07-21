@@ -10,6 +10,7 @@ namespace Code.Scripts.Game.Level.Goal
     using SPO.Level.Goal.Events;
     using SPO.Level.Goal.Interfaces;
     using SPO.Managers.GameStats;
+    using SPO.Managers.Networking;
     using SPO.Player;
 
     [RequireComponent(typeof(Collider2D))]
@@ -36,12 +37,12 @@ namespace Code.Scripts.Game.Level.Goal
 
         private void OnEnable()
         {
-            EventManager.Ins.AddListener(SPOServerEvents.OnGameReset, OnGameReset);
+            SPONetGameoverManager.OnServerResetGame += OnGameReset;
         }
 
         private void OnDisable()
         {
-            EventManager.Ins.RemoveListener(SPOServerEvents.OnGameReset, OnGameReset);
+            SPONetGameoverManager.OnServerResetGame -= OnGameReset;
         }
 
         [Server]
