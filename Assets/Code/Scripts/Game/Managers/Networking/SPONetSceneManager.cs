@@ -74,6 +74,18 @@ namespace SPO.Managers.Networking
             _delayTask.OnTaskCompleted -= OnChangingToLobbyScene;
             RpcStopChangingScene();
         }
+        
+        public bool IsCurrentSceneGame()
+        {
+            string currentScenePath = SceneManager.GetActiveScene().path;
+            return IsGameScene(currentScenePath);
+        }
+        
+        public bool IsCurrentSceneLobby()
+        {
+            string currentScenePath = SceneManager.GetActiveScene().path;
+            return IsLobbyScene(currentScenePath);
+        }
 
         public bool IsLobbyScene(string scenePath)
         {

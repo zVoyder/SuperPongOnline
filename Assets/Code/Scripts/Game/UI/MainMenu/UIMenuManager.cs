@@ -1,52 +1,52 @@
 namespace SPO.UI.MainMenu
 {
-    using Player;
+    using Managers.Networking;
     using UnityEngine;
-    using UnityEngine.Serialization;
-    using SPO.Managers.Networking;
-
+    using SPO.Managers.Networking.Steam;
+    
     public class UIMenuManager : MonoBehaviour
     {
-        [FormerlySerializedAs("_menu"), Header("UI")]
+        [Header("UI Panels")]
         [SerializeField]
         private GameObject _menuPanel;
         [SerializeField]
         private GameObject _lobbyPanel;
+        [SerializeField]
+        private GameObject _matchmakingPanel;
 
         private void OnEnable()
         {
-            NetPlayerController.OnPlayerStopClient += GoToMenu;
-            SPOSteamLobbyManager.OnJoinedLobby += OnJoinedLobby;
-            SPOSteamLobbyManager.OnLeftLobby += OnLeftLobby;
-        }
-        
-        private void OnDisable()
-        {
-            NetPlayerController.OnPlayerStopClient -= GoToMenu;
-            SPOSteamLobbyManager.OnJoinedLobby -= OnJoinedLobby;
-            SPOSteamLobbyManager.OnLeftLobby -= OnLeftLobby;
+            SPOSteamMatchmaker.OnStartMatchmaking += GoToMatchmaking;
+            SPONetworkManager.OnClientConnected += GoToLobby;
+            SPONetworkManager.OnClientDisconnected += GoToMenu;
         }
 
-        private void OnJoinedLobby()
+        private void OnDisable()
         {
-            GoToLobby();
+            SPOSteamMatchmaker.OnStartMatchmaking -= GoToMatchmaking;
+            SPONetworkManager.OnClientConnected -= GoToLobby;
+            SPONetworkManager.OnClientDisconnected -= GoToMenu;
         }
-        
-        private void OnLeftLobby()
-        {
-            GoToMenu();
-        }
-        
+
         public void GoToMenu()
         {
             _menuPanel.SetActive(true);
+            _matchmakingPanel.SetActive(false);
             _lobbyPanel.SetActive(false);
         }
 
         public void GoToLobby()
         {
-            _menuPanel.SetActive(false);
             _lobbyPanel.SetActive(true);
+            _menuPanel.SetActive(false);
+            _matchmakingPanel.SetActive(false);
+        }
+        
+        public void GoToMatchmaking()
+        {
+            _matchmakingPanel.SetActive(true);
+            _menuPanel.SetActive(false);
+            _lobbyPanel.SetActive(false);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace SPO.Player
     [RequireComponent(typeof(NetworkIdentity))]
     public class NetPlayerController : NetworkBehaviour, ICastNetworkManager<SPONetworkManager>
     {
-        [FormerlySerializedAs("_playerPrefab"), Header("Player Prefabs")]
+        [Header("Player Prefabs")]
         [SerializeField]
         private GameObject _playerRacketPrefab;
 
@@ -26,7 +26,9 @@ namespace SPO.Player
         public static event Action OnPlayerStopAuthority;
         public static event Action OnPlayerStartClient;
         public static event Action OnPlayerStopClient;
-
+        public static event Action OnServerPlayerConnected;
+        public static event Action OnServerPlayerDisconnected;
+        
         private void Awake()
         {
             DontDestroyOnLoad(gameObject);
@@ -48,6 +50,16 @@ namespace SPO.Player
         public override void OnStopAuthority()
         {
             OnPlayerStopAuthority?.Invoke();
+        }
+
+        public override void OnStartServer()
+        {
+            OnServerPlayerConnected?.Invoke();
+        }
+
+        public override void OnStopServer()
+        {
+            OnServerPlayerDisconnected?.Invoke();
         }
 
         public override void OnStartClient()

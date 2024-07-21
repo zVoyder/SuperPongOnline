@@ -1,14 +1,15 @@
 namespace SPO.UI.MainMenu
 {
     using UnityEngine;
-    using SPO.Managers.Networking;
     using SPO.Player;
+    using SPO.Managers.Networking;
+    using SPO.Managers.Networking.Steam;
 
     public class UINetActions : MonoBehaviour
     {
         public void CasualMatchButton()
         {
-            SPOSteamLobbyManager.FindLobbies();
+            SPOSteamMatchmaker.StartMatchmaking();
         }
         
         public void PrivateMatchButton()

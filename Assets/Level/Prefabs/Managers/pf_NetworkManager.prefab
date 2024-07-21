@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6744751678615668179}
   - component: {fileID: 4002570876564385932}
-  - component: {fileID: 6175828076536043400}
-  - component: {fileID: 5021805559067839253}
   - component: {fileID: 1562607916693916018}
   m_Layer: 0
   m_Name: pf_NetworkManager
@@ -83,30 +81,6 @@ MonoBehaviour:
   evaluationMethod: 1
   evaluationInterval: 3
   timeInterpolationGui: 0
---- !u!114 &6175828076536043400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6912194711476200413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f35ed265050149279c0c55da691f6927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5021805559067839253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6912194711476200413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef4bffeda13d7a748973ff9204401c07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1562607916693916018
 MonoBehaviour:
   m_ObjectHideFlags: 0

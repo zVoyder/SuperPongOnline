@@ -2,6 +2,7 @@ namespace SPO.UI.Lobby
 {
     using System.Linq;
     using System.Collections.Generic;
+    using Managers.Networking.Steam;
     using Mirror;
     using UnityEngine;
     using TMPro;
@@ -35,31 +36,26 @@ namespace SPO.UI.Lobby
             SPONetSceneManager.OnRPCStartChangingScene += OnStartChangingScene;
             SPONetSceneManager.OnRPCStopChangingScene += OnStopChangingScene;
             SPONetSceneManager.OnRPCChangingSceneDelayUpdate += UpdateTimeLeftText;
-            SPONetworkManager.OnServerClientConnected += OnServerClientConnected;
-            SPONetworkManager.OnServerClientDisconnected += OnServerClientDisconnected;
-            NetPlayerController.OnPlayerStartClient += UpdatePlayerTagsList;
-            NetPlayerController.OnPlayerStopClient += OnPlayerStopClient;
             NetPlayerController.OnPlayerStartAuthority += UpdatePlayerTagsList;
-            SPOSteamLobbyManager.OnLobbyUpdate += UpdatePlayerTagsList;
+            // NetPlayerController.OnPlayerStartClient += UpdatePlayerTagsList;
+            SPONetworkManager.OnServerClientDisconnected += OnServerClientDisconnected; // when a player disconnects from the server, update the server
+            SPONetworkManager.OnClientDisconnected += UpdatePlayerTagsList; // when a player stops client, update his client
             NetPlayerData.OnPlayerClientUpdatedReadyStatus += UpdatePlayerTagsList;
-            NetPlayerData.OnPlayerClientUpdatedName += UpdatePlayerTagsList;
+            NetPlayerData.OnPlayerClientUpdatedName += UpdatePlayerTagsList; // if some player changes their name while in lobby
         }
-
         private void OnDisable()
         {
             SPONetSceneManager.OnRPCStartChangingScene -= OnStartChangingScene;
             SPONetSceneManager.OnRPCStopChangingScene -= OnStopChangingScene;
             SPONetSceneManager.OnRPCChangingSceneDelayUpdate -= UpdateTimeLeftText;
-            SPONetworkManager.OnServerClientConnected -= OnServerClientConnected;
-            SPONetworkManager.OnServerClientDisconnected -= OnServerClientDisconnected;
-            NetPlayerController.OnPlayerStartClient -= UpdatePlayerTagsList;
-            NetPlayerController.OnPlayerStopClient -= OnPlayerStopClient;
             NetPlayerController.OnPlayerStartAuthority -= UpdatePlayerTagsList;
-            SPOSteamLobbyManager.OnLobbyUpdate -= UpdatePlayerTagsList;
+            // NetPlayerController.OnPlayerStartClient -= UpdatePlayerTagsList;
+            SPONetworkManager.OnServerClientDisconnected -= OnServerClientDisconnected;
+            SPONetworkManager.OnClientDisconnected -= UpdatePlayerTagsList;
             NetPlayerData.OnPlayerClientUpdatedReadyStatus -= UpdatePlayerTagsList;
             NetPlayerData.OnPlayerClientUpdatedName -= UpdatePlayerTagsList;
         }
-
+        
         private void OnServerClientConnected(NetworkConnectionToClient conn)
         {
             UpdatePlayerTagsList();
@@ -68,22 +64,17 @@ namespace SPO.UI.Lobby
         private void OnServerClientDisconnected(NetworkConnectionToClient conn)
         { 
             UpdatePlayerTagsList();
-        }
-
-        private void OnPlayerStopClient()
-        {
-            UpdatePlayerTagsList();
-            SetDefaultTimeText();
-        }
-        
-        private void OnStopChangingScene()
-        {
             SetDefaultTimeText();
         }
         
         private void OnStartChangingScene(int delay)
         { 
-            UpdateTimeLeftText(delay);
+            UpdateTimeLeftText(delay); // When starting changing scene, update the time left with the first second
+        }
+        
+        private void OnStopChangingScene()
+        {
+            SetDefaultTimeText(); // When stopping changing scene, set the default time text
         }
 
         public void UpdatePlayerTagsList()
