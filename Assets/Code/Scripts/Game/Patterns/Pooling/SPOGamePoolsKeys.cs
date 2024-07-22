@@ -6,6 +6,7 @@ namespace SPO.Patterns.Pooling
 
     public class SPOGamePoolsKeys : GamePoolsKeysBase
     {
+        [field: Header("Pool Keys")]
         [field: SerializeField]
         public ScriptableKey BallKey { get; private set; }
     }

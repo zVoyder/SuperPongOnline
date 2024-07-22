@@ -11,6 +11,7 @@ namespace SPO.Managers.GameMachine.States
         {
         }
 
+        /// <inheritdoc/>
         public override void Enter()
         {
             Debug.Log("GameBeginState entered.");
@@ -18,14 +19,17 @@ namespace SPO.Managers.GameMachine.States
             Context.MachineController.ServerGamePlaying();
         }
 
+        /// <inheritdoc/>
         public override void Exit()
         {
         }
 
+        /// <inheritdoc/>
         public override void Process()
         {
         }
 
+        /// <inheritdoc/>
         public override void FixedProcess()
         {
         }

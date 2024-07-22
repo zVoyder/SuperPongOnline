@@ -11,6 +11,7 @@ namespace SPO.Managers.GameMachine
 
     public class SPOGameMachine : GameMachineBase, ICastGameManager<SPOGameManager>
     {
+        [field: Header("Networking")]
         [field: SerializeField]
         public SPONetGameMachineController NetMachineController { get; private set; }
         
@@ -23,6 +24,7 @@ namespace SPO.Managers.GameMachine
             Init();
         }
         
+        /// <inheritdoc/>
         public override void Init()
         {
             base.Init();
@@ -41,6 +43,7 @@ namespace SPO.Managers.GameMachine
             AddState(GameStateKeys.GameEnd, endState);
         }
         
+        /// <inheritdoc/>
         public override bool Check()
         {
             return Context != null;

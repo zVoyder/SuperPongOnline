@@ -37,16 +37,25 @@ namespace SPO.Player
             PlayerSteamID = arg3;
         }
         
+        /// <summary>
+        /// Checks if the player is not connected.
+        /// </summary>
+        /// <returns>True if the player is not connected, false otherwise. </returns>
         public bool Check()
         {
             return ConnectionID == -1;
         }
 
+        /// <inheritdoc/>
         public override void OnStartAuthority()
         { 
             SetPlayerName(SteamFriends.GetPersonaName());
         }
         
+        /// <summary>
+        /// Sets the player name.
+        /// </summary>
+        /// <param name="playerName">The player name.</param>
         [Client]
         public void SetPlayerName(string playerName)
         { 
@@ -54,30 +63,41 @@ namespace SPO.Player
             gameObject.name = SPOConstants.LocalPlayerName;
         }
         
-        [ContextMenu("Set Ready Status")]
-        private void SetReadyStatus()
-        {
-            CmdSetReadyStatus(!IsPlayerReady);
-        }
-        
+        /// <summary>
+        /// Sets the player ready status.
+        /// </summary>
+        /// <param name="readyStatus">The ready status.</param>
         [Client]
         public void SetReadyStatus(bool readyStatus)
         {
             CmdSetReadyStatus(readyStatus);
         }
 
+        /// <summary>
+        /// Command to set the player name.
+        /// </summary>
+        /// <param name="playerName">The player name.</param>
         [Command]
         private void CmdSetPlayerName(string playerName)
         {
             this.OnPlayerUpdateName(this.PlayerName, playerName);
         }
         
+        /// <summary>
+        /// Command to set the player ready status.
+        /// </summary>
+        /// <param name="readyStatus">The ready status.</param>
         [Command]
         private void CmdSetReadyStatus(bool readyStatus)
         {
             this.IsPlayerReady = readyStatus;
         }
         
+        /// <summary>
+        /// SyncVar event handler for when the player name is updated.
+        /// </summary>
+        /// <param name="oldValue">The old player name.</param>
+        /// <param name="newValue">The new player name.</param>
         private void OnPlayerUpdateName(string oldValue, string newValue)
         {
             if (isServer)
@@ -87,6 +107,11 @@ namespace SPO.Player
                 OnClientPlayerUpdatedName?.Invoke();
         }
 
+        /// <summary>
+        /// SyncVar event handler for when the player ready status is changed.
+        /// </summary>
+        /// <param name="oldStatus">The old ready status.</param>
+        /// <param name="newStatus">The new ready status.</param>
         private void OnChangedReadyStatus(bool oldStatus, bool newStatus)
         {
             if (isServer)

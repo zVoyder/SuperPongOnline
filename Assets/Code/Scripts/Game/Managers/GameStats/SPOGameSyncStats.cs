@@ -29,6 +29,9 @@ namespace SPO.Managers.GameStats
             SetNetSyncs();
         }
         
+        /// <summary>
+        /// Set the network syncs for the SyncStats.
+        /// </summary>
         private void SetNetSyncs()
         {
             // Only the server should be able to change these values

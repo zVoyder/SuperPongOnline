@@ -18,6 +18,12 @@ namespace SPO.Player
         private float TopBoundary => _gameStats.SyncStats.TopBoundary;
         private float BottomBoundary => _gameStats.SyncStats.BottomBoundary;
         
+        /// <summary>
+        /// Initializes the racket movement.
+        /// </summary>
+        /// <param name="arg1">The player racket manager.</param>
+        /// <param name="arg2">The game stats.</param>
+        /// <param name="arg3">The rigidbody.</param>
         public void Init(PlayerRacketManager arg1, SPOGameStats arg2, Rigidbody2D arg3)
         {
             _playerRacketManager = arg1;
@@ -28,6 +34,10 @@ namespace SPO.Player
             _rigidbody.bodyType = RigidbodyType2D.Kinematic;
         }
         
+        /// <summary>
+        /// Checks if the racket movement is correctly initialized.
+        /// </summary>
+        /// <returns>True if the racket movement is correctly initialized, false otherwise.</returns>
         public bool Check()
         {
             return _gameStats != null && _rigidbody != null;
@@ -57,26 +67,41 @@ namespace SPO.Player
             CmdSendInputMove(v);
         }
         
+        /// <summary>
+        /// Event handler for when the player stops moving.
+        /// </summary>
+        /// <param name="context">The input action callback context.</param>
         [ClientCallback]
-        private void OnStopMoveInput(InputAction.CallbackContext obj)
+        private void OnStopMoveInput(InputAction.CallbackContext context)
         {
             if (!isOwned) return;
             
             CmdStop();
         }
         
+        /// <summary>
+        /// Command to send the input move.
+        /// </summary>
+        /// <param name="vertical">The vertical input.</param>
         [Command]
         private void CmdSendInputMove(float vertical)
         {
             ServerMove(vertical);
         }
         
+        /// <summary>
+        /// Command to stop the racket movement.
+        /// </summary>
         [Command]
         private void CmdStop()
         {
             ServerStop();
         }
         
+        /// <summary>
+        /// Moves the racket.
+        /// </summary>
+        /// <param name="vertical">The vertical input.</param>
         [Server]
         private void ServerMove(float vertical)
         {
@@ -90,12 +115,20 @@ namespace SPO.Player
             _rigidbody.velocity = direction * (Speed * Time.fixedDeltaTime);
         }
         
+        /// <summary>
+        /// Stops the racket.
+        /// </summary>
         [Server]
         private void ServerStop()
         {
             _rigidbody.velocity = Vector2.zero;
         }
         
+        /// <summary>
+        /// Checks if the racket can move.
+        /// </summary>
+        /// <param name="vertical">The vertical input.</param>
+        /// <returns>True if the racket can move, false otherwise.</returns>
         [Server]
         private bool CanMove(float vertical)
         {

@@ -21,6 +21,13 @@ namespace SPO.Level.Ball
         private float BallAngleRange => _gameStats.SyncStats.BallStartAngleRange;
         private float RandomAngle => Random.Range(-BallAngleRange, BallAngleRange);
 
+        /// <summary>
+        /// Initializes the ball movement.
+        /// </summary>
+        /// <param name="arg1">The ball manager.</param>
+        /// <param name="arg2">The collider.</param>
+        /// <param name="arg3">The rigidbody.</param>
+        /// <param name="arg4">The game stats.</param>
         public void Init(BallManager arg1, Collider2D arg2, Rigidbody2D arg3, SPOGameStats arg4)
         {
             _ballManager = arg1;
@@ -33,11 +40,18 @@ namespace SPO.Level.Ball
             _rigidbody.gravityScale = 0;
         }
 
+        /// <summary>
+        /// Checks if the ball movement is correctly initialized.
+        /// </summary>
+        /// <returns>True if the ball movement is valid, false otherwise.</returns>
         public bool Check()
         {
             return _rigidbody != null && _gameStats != null;
         }
 
+        /// <summary>
+        /// Begins the ball movement.
+        /// </summary>
         [Server]
         public virtual void Begin()
         {
@@ -51,12 +65,19 @@ namespace SPO.Level.Ball
             SetVelocity(dir * _gameStats.SyncStats.BallSpeed);
         }
 
+        /// <summary>
+        /// Stops the ball movement.
+        /// </summary>
         [Server]
         public void Stop()
         {
             SetVelocity(Vector2.zero);
         }
 
+        /// <summary>
+        /// Sets the velocity of the ball.
+        /// </summary>
+        /// <param name="velocity">The velocity to set.</param>
         [Server]
         protected void SetVelocity(Vector2 velocity)
         {
@@ -64,6 +85,10 @@ namespace SPO.Level.Ball
             _currentVelocity = velocity;
         }
 
+        /// <summary>
+        /// Bounces the ball off the wall.
+        /// </summary>
+        /// <param name="other">The collider of the wall.</param>
         [ServerCallback]
         protected virtual void WallBounce(Collider2D other)
         {
@@ -72,6 +97,11 @@ namespace SPO.Level.Ball
             SetVelocity(vel);
         }
 
+        /// <summary>
+        /// Bounces the ball off the racket.
+        /// </summary>
+        /// <param name="playerID">The player ID of the racket.</param>
+        /// <param name="other">The collider of the racket.</param>
         [ServerCallback]
         protected virtual void RacketBounce(int playerID, Collider2D other)
         {
@@ -89,12 +119,15 @@ namespace SPO.Level.Ball
             SetVelocity(newDir * BallSpeed);
         }
         
+        /// <summary>
+        /// Increases the speed multiplier of the ball.
+        /// </summary>
         [Server]
         private void IncreaseSpeedMultiplier()
         {
             _currentSpeedMultiplier *= _gameStats.SyncStats.BallSpeedMultiplier;
         }
-
+        
         [ServerCallback]
         private void OnTriggerEnter2D(Collider2D other)
         {

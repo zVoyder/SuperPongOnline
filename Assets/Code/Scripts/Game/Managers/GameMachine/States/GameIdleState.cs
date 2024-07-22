@@ -11,20 +11,24 @@ namespace SPO.Managers.GameMachine.States
         {
         }
         
+        /// <inheritdoc/>
         public override void Enter()
         {
             Debug.Log("GameIdleState entered.");
             Context.MachineController.TriggerResetGame();
         }
         
+        /// <inheritdoc/>
         public override void Exit()
         {
         }
         
+        /// <inheritdoc/>
         public override void Process()
         {
         }
         
+        /// <inheritdoc/>
         public override void FixedProcess()
         {
         }

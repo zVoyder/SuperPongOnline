@@ -13,6 +13,7 @@ namespace SPO.Managers.GameMachine.States
         {
         }
         
+        /// <inheritdoc/>
         public override void Enter()
         {
             Debug.Log("GameEndState entered.");
@@ -23,24 +24,27 @@ namespace SPO.Managers.GameMachine.States
                 Context.MachineController.OnWinnerIDChangedHookReceived += TriggerWinStatus;
         }
 
+        /// <inheritdoc/>
         public override void Exit()
         {
             Context.MachineController.OnWinnerIDChangedHookReceived -= TriggerWinStatus;
             Context.MachineController.TriggerResetGame();
         }
         
+        /// <inheritdoc/>
         public override void Process()
         {
         }
         
+        /// <inheritdoc/>
         public override void FixedProcess()
         {
         }
         
+        /// <inheritdoc/>
         private void TriggerWinStatus(int winnerID)
         {
             Context.MachineController.TriggerGameOver();
-            // Context.NetMachineController.ServerGameBegin(); // TODO: This will be called once they both accept the rematch
         }
     }
 }

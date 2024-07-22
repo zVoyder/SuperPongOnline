@@ -44,7 +44,8 @@ namespace Code.Scripts.Game.Level.Goal
         {
             SPONetGameoverManager.OnServerResetGame -= OnGameReset;
         }
-
+        
+        /// <inheritdoc/>
         [Server]
         public void Score(int playerID)
         {
@@ -53,17 +54,29 @@ namespace Code.Scripts.Game.Level.Goal
             EventManager.Ins.TriggerEvent(SPOServerEvents.OnGoalScored, new GoalEventArgs(playerID, ScoreValue));
         }
         
+        /// <summary>
+        /// Sets the score value of this goal.
+        /// </summary>
+        /// <param name="value">The value to set.</param>
         [Server]
         public void SetScoreValue(int value)
         {
             ScoreValue = value;
         }
         
+        /// <summary>
+        /// Event handler for when the game is reset.
+        /// </summary>
         private void OnGameReset()
         {
             SetScoreValue(0);
         }
         
+        /// <summary>
+        /// SyncVar event handler for when the score value changes.
+        /// </summary>
+        /// <param name="oldValue">The old value of the score.</param>
+        /// <param name="newValue">The new value of the score.</param>
         private void OnScoreValueChanged(int oldValue, int newValue)
         {
             OnScoreValueChangedHookReceived?.Invoke(newValue);

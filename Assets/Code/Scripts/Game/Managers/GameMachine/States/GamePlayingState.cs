@@ -14,25 +14,33 @@ namespace SPO.Managers.GameMachine.States
         {
         }
 
+        /// <inheritdoc/>
         public override void Enter()
         {
             Debug.Log("GamePlayingState entered.");
             EventManager.Ins.AddListener<GoalEventArgs>(SPOServerEvents.OnGoalScored, OnGoalScored);
         }
         
+        /// <inheritdoc/>
         public override void Exit()
         {
             EventManager.Ins.RemoveListener<GoalEventArgs>(SPOServerEvents.OnGoalScored, OnGoalScored);
         }
 
+        /// <inheritdoc/>
         public override void Process()
         {
         }
 
+        /// <inheritdoc/>
         public override void FixedProcess()
         {
         }
 
+        /// <summary>
+        /// Event handler for when a goal is scored.
+        /// </summary>
+        /// <param name="args">The event arguments.</param>
         private void OnGoalScored(GoalEventArgs args)
         {
             Context.MachineController.EndBall();

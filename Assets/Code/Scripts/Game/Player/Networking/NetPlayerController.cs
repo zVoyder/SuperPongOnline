@@ -48,37 +48,49 @@ namespace SPO.Player
             SPONetGameMachineController.OnClientGameBegin -= OnClientGameBegin;
         }
 
+        /// <summary>
+        /// Initializes the net player controller with its data.
+        /// </summary>
+        /// <param name="connectionID">The connection ID of the player. </param>
+        /// <param name="playerIdNumber">The player ID number.</param>
+        /// <param name="playerSteamId">The Steam ID of the player.</param>
         public void Init(int connectionID, int playerIdNumber, ulong playerSteamId)
         {
             NetData.Init(connectionID, playerIdNumber, playerSteamId);
         }
 
+        /// <inheritdoc/>
         public override void OnStartAuthority()
         {
             OnPlayerStartAuthority?.Invoke();
         }
 
+        /// <inheritdoc/>
         public override void OnStopAuthority()
         {
             OnPlayerStopAuthority?.Invoke();
         }
 
+        /// <inheritdoc/>
         public override void OnStartServer()
         {
             OnServerPlayerConnected?.Invoke();
         }
 
+        /// <inheritdoc/>
         public override void OnStopServer()
         {
             OnServerPlayerDisconnected?.Invoke();
         }
 
+        /// <inheritdoc/>
         public override void OnStartClient()
         {
             OnPlayerStartClient?.Invoke();
             NetworkManager.NetPlayers.Add(this);
         }
 
+        /// <inheritdoc/>
         public override void OnStopClient()
         {
             OnPlayerStopClient?.Invoke();
@@ -86,6 +98,10 @@ namespace SPO.Player
             DespawnPlayerRacket();
         }
 
+        /// <summary>
+        /// Spawns the player racket for this net player controller.
+        /// </summary>
+        /// <param name="position">The position where the player racket will be spawned.</param>
         [Server]
         public void SpawnPlayerRacket(Vector2 position)
         {
@@ -96,6 +112,9 @@ namespace SPO.Player
             NetworkServer.Spawn(goPlayerRacket, connectionToClient);
         }
         
+        /// <summary>
+        /// Despawns the player racket for this net player controller.
+        /// </summary>
         [Server]
         public void DespawnPlayerRacket()
         {
@@ -104,6 +123,10 @@ namespace SPO.Player
             PlayerRacket = null;
         }
 
+        /// <summary>
+        /// Returns the connection ID of the local player.
+        /// </summary>
+        /// <returns>The connection ID of the local player.</returns>
         public static int GetLocalPlayerID()
         {
             if (NetworkClient.localPlayer.TryGetComponent(out NetPlayerController netPlayer))
@@ -112,11 +135,17 @@ namespace SPO.Player
             return -1;
         }
         
+        /// <summary>
+        /// Event handler for when the client game begins.
+        /// </summary>
         private void OnClientGameBegin()
         {
             OnResetStatus();
         }
         
+        /// <summary>
+        /// Event handler for when a player resets their status.
+        /// </summary>
         private void OnResetStatus()
         {
             NetData.SetReadyStatus(false);

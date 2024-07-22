@@ -42,16 +42,27 @@ namespace SPO.Player
             SetNetSyncs();
         }
         
+        /// <summary>
+        /// Initializes the player racket manager with its net player data.
+        /// </summary>
+        /// <param name="arg">The net player data.</param>
         public void Init(NetPlayerData arg)
         {
             PlayerData = arg;
         }
         
+        /// <summary>
+        /// Checks if the player racket is correctly initialized.
+        /// </summary>
+        /// <returns>True if the player racket is correctly initialized, false otherwise.</returns>
         public bool Check()
         {
             return PlayerData != null;
         }
         
+        /// <summary>
+        /// Sets the network syncs for the player racket.
+        /// </summary>
         private void SetNetSyncs()
         {
             syncDirection = SyncDirection.ServerToClient;
@@ -60,6 +71,7 @@ namespace SPO.Player
             _networkTransform.syncMode = SyncMode.Owner; // Sync position to the owner client
         }
 
+        /// <inheritdoc/>
         public override void OnStartClient()
         {
             if (isOwned)
@@ -68,11 +80,17 @@ namespace SPO.Player
                 OnRemotePlayer();
         }
         
+        /// <summary>
+        /// Event handler for when the player is the local player.
+        /// </summary>
         private void OnLocalPlayer()
         {
             _graphicsController.AssignColor(GameStats.LocalPlayerColor);
         }
-        
+
+        /// <summary>
+        /// Event handler for when the player is a remote player.
+        /// </summary>
         private void OnRemotePlayer()
         {
             _graphicsController.AssignColor(GameStats.RemotePlayerColor);

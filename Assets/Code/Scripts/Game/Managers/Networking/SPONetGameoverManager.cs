@@ -14,6 +14,10 @@ namespace SPO.Managers.Networking
         public static event Action OnServerResetGame;
         public static event Action OnClientResetGame;
         
+        /// <summary>
+        /// Triggers the game over event for every player.
+        /// </summary>
+        /// <param name="winnerID">The ID of the player that won the game.</param>
         [Server]
         public void ServerGameOver(int winnerID)
         {
@@ -21,6 +25,10 @@ namespace SPO.Managers.Networking
             RpcGameOver(winnerID);
         }
 
+        /// <summary>
+        /// RPC for triggering the game over.
+        /// </summary>
+        /// <param name="winnerID">The ID of the player that won the game.</param>
         [ClientRpc]
         public void RpcGameOver(int winnerID)
         {
@@ -41,6 +49,9 @@ namespace SPO.Managers.Networking
             }
         }
 
+        /// <summary>
+        /// Triggers the game reset event for every player.
+        /// </summary>
         [Server]
         public void ServerResetGame()
         {
@@ -48,6 +59,9 @@ namespace SPO.Managers.Networking
             RpcResetGame();
         }
 
+        /// <summary>
+        /// RPC for triggering the game reset.
+        /// </summary>
         [ClientRpc]
         public void RpcResetGame()
         {

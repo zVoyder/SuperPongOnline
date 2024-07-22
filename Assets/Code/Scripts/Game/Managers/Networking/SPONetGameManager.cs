@@ -38,11 +38,19 @@ namespace SPO.Managers.Networking
             NetPlayerData.OnServerPlayerUpdateReadyStatus -= OnServerPlayerUpdateReadyStatus;
         }
 
+        /// <summary>
+        /// Event handler for when a client disconnects from the server.
+        /// </summary>
+        /// <param name="conn">The connection to the client that disconnected.</param>
         private void OnServerClientDisconnected(NetworkConnectionToClient conn)
         { 
             DespawnBall();
         }
         
+        /// <summary>
+        /// Event handler for when the server changes the scene.
+        /// </summary>
+        /// <param name="scenePath">The path of the scene that was loaded.</param>
         private void OnServerChangedScene(string scenePath)
         {
             if (SceneManager.NetSceneManager.IsGameScene(scenePath))
@@ -52,6 +60,9 @@ namespace SPO.Managers.Networking
             }
         }
         
+        /// <summary>
+        /// Starts the game by setting the game state to GameBegin.
+        /// </summary>
         [Server]
         public void StartGame()
         {
@@ -59,6 +70,9 @@ namespace SPO.Managers.Networking
             GameManager.GameMachine.NetMachineController.ServerGameBegin();
         }
         
+        /// <summary>
+        /// Spawns the player rackets for all connected players.
+        /// </summary>
         [Server]
         public void SpawnPlayerRackets()
         {
@@ -71,6 +85,9 @@ namespace SPO.Managers.Networking
             }
         }
         
+        /// <summary>
+        /// Spawns the ball in the game scene if it has not been spawned yet.
+        /// </summary>
         [Server]
         public void SpawnBall()
         {
@@ -82,6 +99,9 @@ namespace SPO.Managers.Networking
             SpawnedBall.Begin();
         }
 
+        /// <summary>
+        /// Despawns the ball in the game scene if it has been spawned.
+        /// </summary>
         [Server]
         public void DespawnBall()
         {
@@ -90,6 +110,9 @@ namespace SPO.Managers.Networking
             DisposeBall();
         }
 
+        /// <summary>
+        /// Returns the ball in the pool.
+        /// </summary>
         private void DisposeBall()
         {
             if (!SpawnedBall) return;
@@ -98,6 +121,9 @@ namespace SPO.Managers.Networking
             SpawnedBall = null;
         }
         
+        /// <summary>
+        /// Event handler for when a player updates their ready status.
+        /// </summary>
         private void OnServerPlayerUpdateReadyStatus()
         {
             if (!AreAllPlayersReadyForRematch()) return;
@@ -105,6 +131,10 @@ namespace SPO.Managers.Networking
             StartGame();
         }
         
+        /// <summary>
+        /// Checks if all players are ready for a rematch.
+        /// </summary>
+        /// <returns>True if all players are ready for a rematch, false otherwise.</returns>
         private bool AreAllPlayersReadyForRematch()
         {
             if (!NetworkManager.SceneManager.NetSceneManager.IsCurrentSceneGame()) return false;

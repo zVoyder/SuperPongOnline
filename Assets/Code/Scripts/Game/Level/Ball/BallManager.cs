@@ -38,22 +38,37 @@ namespace SPO.Level.Ball
             SetNetSyncs();
         }
 
+        /// <summary>
+        /// Initializes the ball with the attacker player ID.
+        /// </summary>
+        /// <param name="arg1">The attacker player ID.</param>
         public void Init(int arg1)
         {
             AssignAttackerPlayerID(arg1);
         }
         
+        /// <summary>
+        /// Checks if the attacker player ID is valid.
+        /// </summary>
+        /// <returns>True if the attacker player ID is valid, false otherwise.</returns>
         public bool Check()
         {
-            return AttackerPlayerID < 0;
+            return AttackerPlayerID >= 0;
         }
 
+        /// <summary>
+        /// Assigns the attacker player ID.
+        /// </summary>
+        /// <param name="playerID">The attacker player ID.</param>
         [Server]
         public void AssignAttackerPlayerID(int playerID)
         {
             AttackerPlayerID = playerID;
         }
         
+        /// <summary>
+        /// Sets the network syncs for the ball.
+        /// </summary>
         private void SetNetSyncs()
         {
             // Making sure the ball is synced by the server, and the client only receives the updates
@@ -63,23 +78,30 @@ namespace SPO.Level.Ball
             _ballMovement.syncMode = SyncMode.Observers;
         }
 
+        /// <summary>
+        /// Scores a goal.
+        /// </summary>
+        /// <param name="goal">The receiver goal.</param>
         [Server]
         public void ScoreGoal(IGoal goal)
         {
             goal.Score(AttackerPlayerID);
         }
         
+        /// <inheritdoc/>
         public void AssociatePool(Pool associatedPool)
         {
             RelatedPool = associatedPool;
         }
         
+        /// <inheritdoc/>
         [Server]
         public void Dispose()
         {
             RelatedPool.Dispose(gameObject);
         }
 
+        /// <inheritdoc/>
         public void Clear()
         {
             if (!NetworkServer.active) return;
@@ -87,6 +109,9 @@ namespace SPO.Level.Ball
             _ballMovement.Stop();
         }
 
+        /// <summary>
+        /// Begins the ball behaviour.
+        /// </summary>
         [Server]
         public void Begin()
         {

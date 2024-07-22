@@ -9,7 +9,7 @@ namespace SPO.Managers.Networking
 
     public class SPONetSceneManager : NetworkBehaviour
     {
-        [FormerlySerializedAs("delay"),Header("Scene Delay")]
+        [Header("Network Scenes Delay")]
         [SerializeField]
         private float _gameSceneDelay = 3f;
         [SerializeField]
@@ -59,6 +59,9 @@ namespace SPO.Managers.Networking
             }
         }
         
+        /// <summary>
+        /// Starts the scene change process to the game scene.
+        /// </summary>
         [Server]
         public void ChangeSceneToGame()
         {
@@ -67,6 +70,9 @@ namespace SPO.Managers.Networking
             _delayTask.OnTaskCompleted += OnChangingToGameScene;
         }
 
+        /// <summary>
+        /// Starts the scene change process to the lobby scene.
+        /// </summary>
         [Server]
         public void ChangeSceneToLobby()
         {
@@ -75,6 +81,9 @@ namespace SPO.Managers.Networking
             _delayTask.OnTaskCompleted += OnChangingToLobbyScene;
         }
         
+        /// <summary>
+        /// Stops the scene change process.
+        /// </summary>
         [Server]
         public void StopChangingScene()
         {
@@ -87,28 +96,49 @@ namespace SPO.Managers.Networking
             RpcStopChangingScene();
         }
         
+        /// <summary>
+        /// Checks if the current scene is the game scene.
+        /// </summary>
+        /// <returns>True if the current scene is the game scene, false otherwise.</returns>
         public bool IsCurrentSceneGame()
         {
             string currentScenePath = SceneManager.GetActiveScene().path;
             return IsGameScene(currentScenePath);
         }
         
+        /// <summary>
+        /// Checks if the current scene is the lobby scene.
+        /// </summary>
+        /// <returns>True if the current scene is the lobby scene, false otherwise.</returns>
         public bool IsCurrentSceneLobby()
         {
             string currentScenePath = SceneManager.GetActiveScene().path;
             return IsLobbyScene(currentScenePath);
         }
 
+        /// <summary>
+        /// Checks if the scene path is the lobby scene.
+        /// </summary>
+        /// <param name="scenePath">The scene path to check.</param>
+        /// <returns>True if the scene path is the lobby scene, false otherwise.</returns>
         public bool IsLobbyScene(string scenePath)
         {
             return scenePath == LobbyScene;
         }
 
+        /// <summary>
+        /// Checks if the scene path is the game scene.
+        /// </summary>
+        /// <param name="scenePath">The scene path to check.</param>
+        /// <returns>True if the scene path is the game scene, false otherwise.</returns>
         public bool IsGameScene(string scenePath)
         {
             return scenePath == GameScene;
         }
 
+        /// <summary>
+        /// Event handler for when the scene starts changing to the game scene.
+        /// </summary>
         private void OnChangingToGameScene()
         {
             Debug.Log("Changing to Game Scene...");
@@ -116,6 +146,9 @@ namespace SPO.Managers.Networking
             NetworkManager.singleton.ServerChangeScene(GameScene);
         }
         
+        /// <summary>
+        /// Event handler for when the scene starts changing to the lobby scene.
+        /// </summary>
         private void OnChangingToLobbyScene()
         {
             Debug.Log("Changing to Lobby Scene...");
@@ -123,18 +156,29 @@ namespace SPO.Managers.Networking
             NetworkManager.singleton.ServerChangeScene(LobbyScene);
         }
 
+        /// <summary>
+        /// RPC for starting the scene change process.
+        /// </summary>
+        /// <param name="totalSecondsDelay">The total seconds delay for the scene change.</param>
         [ClientRpc]
         private void RpcStartChangingScene(int totalSecondsDelay)
         {
             OnRPCStartChangingScene?.Invoke(totalSecondsDelay);
         }
         
+        /// <summary>
+        /// RPC for stopping the scene change process.
+        /// </summary>
         [ClientRpc]
         private void RpcStopChangingScene()
         {
             OnRPCStopChangingScene?.Invoke();
         }
         
+        /// <summary>
+        /// RPC for updating the scene change delay time.
+        /// </summary>
+        /// <param name="currentSecondsDelay">The current seconds delay for the scene change.</param>
         [ClientRpc]
         private void RpcUpdateSceneDelayTime(int currentSecondsDelay)
         {

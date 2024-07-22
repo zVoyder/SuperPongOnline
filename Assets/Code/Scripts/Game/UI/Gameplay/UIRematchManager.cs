@@ -42,21 +42,35 @@ namespace Code.Scripts.Game.UI.Gameplay
             NetPlayerData.OnClientPlayerUpdatedReadyStatus -= OnClientPlayerServerUpdateReadyStatus;
         }
         
+        /// <summary>
+        /// Enables the rematch panel.
+        /// </summary>
         private void EnableRematchPanel()
         {
             _rematchPanel.SetActive(true);
         }
         
+        /// <summary>
+        /// Disables the rematch panel.
+        /// </summary>
         private void DisableRematchPanel()
         {
             _rematchPanel.SetActive(false);
         }
         
+        /// <summary>
+        /// Event handler for when the client game begins.
+        /// </summary>
         private void OnClientGameBegin()
         {
             DisableRematchPanel();
         }
         
+        /// <summary>
+        /// Event handler for when the client game is over.
+        /// </summary>
+        /// <param name="winnerId">The winner ID.</param>
+        /// <param name="isWinner">True if the player is the winner, false otherwise.</param>
         private void OnClientGameover(int winnerId, bool isWinner)
         {
             SetRematchCountText(0);
@@ -64,16 +78,27 @@ namespace Code.Scripts.Game.UI.Gameplay
             EnableRematchPanel();
         }
         
+        /// <summary>
+        /// Event handler for when the client player updates the ready status.
+        /// </summary>
         private void OnClientPlayerServerUpdateReadyStatus()
         { 
             SetRematchCountText(NetworkManager.GetReadyPlayerCount());
         }
         
+        /// <summary>
+        /// Sets the rematch count text.
+        /// </summary>
+        /// <param name="count">How many players are ready for a rematch.</param>
         private void SetRematchCountText(int count)
         {
             _rematchCountText.text = count.ToString() + " / " + NetworkManager.NetPlayers.Count;
         }
         
+        /// <summary>
+        /// Sets the winning status text.
+        /// </summary>
+        /// <param name="isWinner">True if the player is the winner, false otherwise.</param>
         private void SetWinningStatusText(bool isWinner)
         {
             _winStatusText.text = isWinner ? _winnerString : _loserString;

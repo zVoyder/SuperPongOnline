@@ -59,6 +59,7 @@ namespace SPO.Managers.Networking
             NetPlayerData.OnServerPlayerUpdateReadyStatus -= OnServerPlayerReadyStatusUpdate;
         }
 
+        /// <inheritdoc/>
         public override void OnServerAddPlayer(NetworkConnectionToClient conn)
         {
             Debug.Log("Adding player to the server...");
@@ -74,6 +75,7 @@ namespace SPO.Managers.Networking
             AddPlayer(eventArgs);
         }
 
+        /// <inheritdoc/>
         public override void OnClientConnect()
         {
             base.OnClientConnect(); // Call the base otherwise the OnServerAddPlayer method will not be called
@@ -81,18 +83,21 @@ namespace SPO.Managers.Networking
             OnClientConnected?.Invoke();
         }
 
+        /// <inheritdoc/>
         public override void OnClientDisconnect()
         {
             Debug.Log("Client has disconnected from the server!");
             OnClientDisconnected?.Invoke();
         }
 
+        /// <inheritdoc/>
         public override void OnServerConnect(NetworkConnectionToClient conn)
         {
             Debug.Log($"Server has received a Client connection {conn.connectionId}");
             OnServerClientConnected?.Invoke(conn);
         }
 
+        /// <inheritdoc/>
         public override void OnServerDisconnect(NetworkConnectionToClient conn)
         {
             base.OnServerDisconnect(conn);
@@ -102,6 +107,7 @@ namespace SPO.Managers.Networking
             // DO NOT CALL StopConnection() here, it will go in a leak memory loop
         }
 
+        /// <inheritdoc/>
         public override void OnStartServer()
         {
             base.OnStartServer();
@@ -109,6 +115,7 @@ namespace SPO.Managers.Networking
             Debug.Log("<color=yellow>Server has started</color>");
         }
 
+        /// <inheritdoc/>
         public override void OnStopServer()
         {
             base.OnStopServer();
@@ -116,17 +123,29 @@ namespace SPO.Managers.Networking
             Debug.Log("<color=red>Server has stopped</color>");
         }
         
+        /// <summary>
+        /// Gets the number of players that are ready.
+        /// </summary>
+        /// <returns>The number of players that are ready.</returns>
         public int GetReadyPlayerCount()
         {
             return NetPlayers.Count(player => player.NetData.IsPlayerReady);
         }
         
+        /// <summary>
+        /// Checks if the server is full.
+        /// </summary>
+        /// <returns>True if the server is full, false otherwise.</returns>
         public bool IsServerFull()
         { 
             bool isFull = numPlayers >= maxConnections;
             return isFull;
         }
         
+        /// <summary>
+        /// Checks if the server is empty.
+        /// </summary>
+        /// <returns>True if the server is empty, false otherwise.</returns>
         public bool IsServerEmpty()
         {
             bool isEmpty = numPlayers <= 0;
@@ -134,6 +153,10 @@ namespace SPO.Managers.Networking
             return isEmpty;
         }
         
+        /// <summary>
+        /// Starts a client connection to the server.
+        /// </summary>
+        /// <param name="hostAddress">The host address to connect to.</param>
         public static void StartClientConnection(string hostAddress)
         {
             if (NetworkClient.isConnected) return;
@@ -141,6 +164,10 @@ namespace SPO.Managers.Networking
             NetworkManager.singleton.StartClient();
         }
         
+        /// <summary>
+        /// Starts a network "host" - a server and client in the same application with a host address.
+        /// </summary>
+        /// <param name="hostAddress">The host address to connect to.</param>
         public static void StartHostConnection(string hostAddress = "localhost")
         {
             if (NetworkServer.active && NetworkClient.isConnected) return;
@@ -148,12 +175,18 @@ namespace SPO.Managers.Networking
             NetworkManager.singleton.StartHost();
         }
         
+        /// <summary>
+        /// Starts the server, listening for incoming connections if not already started.
+        /// </summary>
         public static void StartServerConnection()
         {
             if (NetworkServer.active) return;
             NetworkManager.singleton.StartServer();
         }
         
+        /// <summary>
+        /// Stops the respectively the connection based on the current mode.
+        /// </summary>
         public static void StopConnection()
         {
             // stop host if host mode
@@ -176,18 +209,30 @@ namespace SPO.Managers.Networking
             }
         }
         
+        /// <summary>
+        /// Event handler for when the server changes the scene.
+        /// </summary>
+        /// <param name="sceneName">The name of the scene that was loaded.</param>
         public override void OnServerSceneChanged(string sceneName)
         {
             base.OnServerSceneChanged(sceneName);
             OnServerChangedScene?.Invoke(sceneName);
         }
         
+        /// <summary>
+        /// Gets the local NetPlayerController.
+        /// </summary>
+        /// <returns>The local NetPlayerController.</returns>
         public static NetPlayerController GetLocalNetPlayer()
         {
             NetworkClient.localPlayer.TryGetComponent(out NetPlayerController localPlayer);
             return localPlayer;
         }
         
+        /// <summary>
+        /// Gets a random connection ID from the server.
+        /// </summary>
+        /// <returns>A random connection ID from the server.</returns>
         public static int GetRandomConnectionID()
         {
             if (NetworkServer.connections.Count <= 0) return -1;
@@ -195,6 +240,10 @@ namespace SPO.Managers.Networking
             return NetworkServer.connections.ElementAt(UnityEngine.Random.Range(0, NetworkServer.connections.Count)).Key;
         }
         
+        /// <summary>
+        /// Adds a NetPlayerController to the server.
+        /// </summary>
+        /// <param name="eventArgs">The event arguments for the connected player.</param>
         private void AddPlayer(ConnectedPlayerEventArgs eventArgs)
         {
             GameObject goPlayer = Instantiate(playerPrefab);
@@ -212,6 +261,9 @@ namespace SPO.Managers.Networking
             OnPlayerAddedToServer?.Invoke(eventArgs);
         }
         
+        /// <summary>
+        /// Event handler for when a player disconnects from the server.
+        /// </summary>
         private void OnServerPlayerDisconnected()
         {
             if (IsServerEmpty()) return; // Do it if server is empty
@@ -220,11 +272,17 @@ namespace SPO.Managers.Networking
                 StopConnection();
         }
         
+        /// <summary>
+        /// Event handler for when a player updates their ready status.
+        /// </summary>
         private void OnServerPlayerReadyStatusUpdate()
         { 
             CheckLobby();
         }
         
+        /// <summary>
+        /// Checks if the lobby is ready and triggers the respective event.
+        /// </summary>
         [Server]
         private void CheckLobby()
         {
@@ -236,6 +294,10 @@ namespace SPO.Managers.Networking
                 OnLobbyUnready();
         }
         
+        /// <summary>
+        /// Checks if all players in the lobby are ready.
+        /// </summary>
+        /// <returns>True if all players in the lobby are ready, false otherwise.</returns>
         private bool ArePlayersLobbyReady()
         {
             if (!IsServerFull()) return false;
@@ -244,12 +306,18 @@ namespace SPO.Managers.Networking
             return NetPlayers.All(player => player.NetData.IsPlayerReady);
         }
 
+        /// <summary>
+        /// Event handler for when all players in the lobby are ready.
+        /// </summary>
         private void OnLobbyReady()
         {
             Debug.Log("All players are ready!");
             OnLobbyPlayersReady?.Invoke();
         }
         
+        /// <summary>
+        /// Event handler for when not all players in the lobby are ready.
+        /// </summary>
         private void OnLobbyUnready()
         {
             Debug.Log("Not all players are ready!");

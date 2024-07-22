@@ -5,6 +5,11 @@ namespace SPO.Utility
 
     public static class SPOSteamUtils
     {
+        /// <summary>
+        /// Gets the Steam avatar image of a player.
+        /// </summary>
+        /// <param name="iImage">The image id of the player.</param>
+        /// <returns>The Steam avatar image of a player as a texture 2D.</returns>
         public static Texture2D GetSteamAvatar(int iImage)
         {
             Texture2D ret = null;

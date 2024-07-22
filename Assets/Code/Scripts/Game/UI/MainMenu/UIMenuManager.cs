@@ -28,6 +28,9 @@ namespace SPO.UI.MainMenu
             SPONetworkManager.OnClientDisconnected -= GoToMenu;
         }
 
+        /// <summary>
+        /// Opens the main menu panel and closes the other panels.
+        /// </summary>
         public void GoToMenu()
         {
             _menuPanel.SetActive(true);
@@ -35,6 +38,9 @@ namespace SPO.UI.MainMenu
             _lobbyPanel.SetActive(false);
         }
 
+        /// <summary>
+        /// Opens the lobby panel and closes the other panels.
+        /// </summary>
         public void GoToLobby()
         {
             _lobbyPanel.SetActive(true);
@@ -42,6 +48,9 @@ namespace SPO.UI.MainMenu
             _matchmakingPanel.SetActive(false);
         }
         
+        /// <summary>
+        /// Opens the matchmaking panel and closes the other panels.
+        /// </summary>
         public void GoToMatchmaking()
         {
             _matchmakingPanel.SetActive(true);

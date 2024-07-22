@@ -6,6 +6,7 @@ namespace Code.Scripts.Game.Level.Goal.UI
     [RequireComponent(typeof(TMP_Text))]
     public class UIGoalScore : MonoBehaviour
     {
+        [Header("Game Elements")]
         [SerializeField]
         private Goal _relatedGoal;
         
@@ -27,11 +28,19 @@ namespace Code.Scripts.Game.Level.Goal.UI
             _relatedGoal.OnScoreValueChangedHookReceived -= OnGoalScored;
         }
         
+        /// <summary>
+        /// Event handler for when a goal is scored.
+        /// </summary>
+        /// <param name="score">The total score of the goal.</param>
         private void OnGoalScored(int score)
         {
             SetText(score.ToString());
         }
         
+        /// <summary>
+        /// Sets the text of the score.
+        /// </summary>
+        /// <param name="text">The text to set.</param>
         private void SetText(string text)
         {
             _scoreText.text = text;

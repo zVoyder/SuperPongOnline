@@ -10,7 +10,7 @@ namespace SPO.Managers
         [field: SerializeField]
         public SPONetSceneManager NetSceneManager { get; private set; }
         
-        // No need to do it since mirror will switch to offline scene
+        // No need to do it since mirror will switch to the offline scene
         // private void OnServerStopped()
         // {
         //     if (!NetSceneManager.IsCurrentSceneGame()) return;
